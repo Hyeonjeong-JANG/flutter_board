@@ -27,9 +27,26 @@ class BoardHome extends StatelessWidget {
               children: [
                 // 알림 요약
                 AlertOverView(),
+
                 SizedBox(height: 20.0),
                 // 게시물
-                ContentBox(),
+                Expanded(
+                  child: ListView.separated(
+                    itemBuilder: (context, index) {
+                      return ContentBox(
+                        author: '김지철',
+                        content: '오늘 주방에 파 10kg 주문했습니다.',
+                        date: '2024년 12월 08일 오전 08:16분',
+                        likes: 2,
+                        comments: 2,
+                      );
+                    },
+                    separatorBuilder: (context, index) {
+                      return SizedBox(height: 20.0);
+                    },
+                    itemCount: 5,
+                  ),
+                ),
               ],
             ),
           ),
@@ -39,6 +56,7 @@ class BoardHome extends StatelessWidget {
   }
 }
 
+// 알림 요약
 class AlertOverView extends StatelessWidget {
   const AlertOverView({super.key});
 
@@ -72,7 +90,19 @@ class AlertOverView extends StatelessWidget {
 
 // 게시물
 class ContentBox extends StatelessWidget {
-  const ContentBox({super.key});
+  final String author;
+  final String content;
+  final String date;
+  final int likes;
+  final int comments;
+  const ContentBox({
+    super.key,
+    required this.author,
+    required this.content,
+    required this.date,
+    required this.likes,
+    required this.comments,
+  });
 
   @override
   Widget build(BuildContext context) {
