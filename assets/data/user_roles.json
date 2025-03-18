@@ -1,0 +1,154 @@
+{
+  "users": [
+    {
+      "id": "사장",
+      "role": "owner",
+      "fullName": "김지철",
+      "shortName": "지철",
+      "birthDate": "1980-05-15",
+      "profileColor": null,
+      "paymentMethod": {
+        "cardName": "신한카드",
+        "cardNumber": "1234567890123456",
+        "expireDate": "10/27",
+        "bankCode": "shinhanfill"
+      },
+      "stores": [
+        {
+          "storeId": "storeA",
+          "bizName": "다토스국밥 경성대점",
+          "baseAddress": "부산 남구 대연동 123-12",
+          "detailAddress": "3층",
+          "isSubscribed": true,
+          "subscriptionStartDate": "2024-12-20",
+          "subscriptionEndDate": "2025-01-20",
+          "nextPaymentDate": "2025-01-20",
+          "logoUrl": "assets/images/store.svg",
+          "bizPhone": "051-123-4567",
+          "bizRegiNumber": "123-12-12345",
+          "closedDay": "주휴일 일요일",
+          "openHour": "오전 8시",
+          "storeCategory": "탕/찌개류",
+          "requiredDocuments": [],
+          "integrations": [],
+          "profit": { "currentProfit": 250.0, "previousProfit": 230.0 },
+          "notifications": [
+            {
+              "message": "새로 등록된 메뉴가 있습니다.",
+              "timestamp": "2024-02-01T20:00:00Z",
+              "route": "/sales-menu"
+            },
+            {
+              "message": "새로운 결재요청이 있습니다.",
+              "timestamp": "2024-02-02T15:30:00Z",
+              "route": "/approval-request"
+            }
+          ],
+          "permissions": ["all_permissions"]
+        },
+        {
+          "storeId": "storeB",
+          "bizName": "형제돼지국밥 대연점",
+          "baseAddress": "부산 동래구 명륜동 456-78",
+          "detailAddress": "2층",
+          "isSubscribed": false,
+          "logoUrl": null,
+          "bizPhone": "051-234-5678",
+          "bizRegiNumber": "234-23-23456",
+          "closedDay": "주휴일 월요일",
+          "openHour": "오전 9시",
+          "storeCategory": "국밥류",
+          "requiredDocuments": [],
+          "integrations": [],
+          "profit": { "currentProfit": 190.0, "previousProfit": 250.0 },
+          "notifications": [
+            {
+              "message": "새로운 결재요청이 있습니다.",
+              "timestamp": "2024-02-01T20:00:00Z",
+              "route": "/approval-request"
+            }
+          ],
+          "permissions": ["all_permissions"]
+        }
+      ]
+    },
+    {
+      "id": "직원1",
+      "role": "employee",
+      "fullName": "박민수",
+      "shortName": "민수",
+      "birthDate": "1990-03-22",
+      "profileColor": null,
+      "paymentMethod": null,
+      "stores": [
+        {
+          "storeId": "storeA",
+          "bizName": "다토스국밥 경성대점",
+          "baseAddress": "부산 남구 대연동 123-12",
+          "detailAddress": "3층",
+          "logoUrl": "assets/images/store.svg",
+          "notifications": [
+            {
+              "message": "이번주 근무 스케줄이 등록되었습니다.",
+              "timestamp": "2024-02-01T10:30:00Z"
+            },
+            {
+              "message": "점포 공지에 새로운 글이 등록되었습니다.",
+              "timestamp": "2024-02-01T10:20:00Z"
+            }
+          ]
+        }
+      ],
+      "permissions": [
+        "expenses.details",
+        "expenses.payment_request",
+        "expenses.rank",
+        "revenue.details",
+        "revenue.target",
+        "attendance.view",
+        "support.contact",
+        "support.faq"
+      ]
+    },
+    {
+      "id": "직원2",
+      "role": "employee",
+      "fullName": "이서연",
+      "shortName": "서연",
+      "birthDate": "1995-11-08",
+      "profileColor": null,
+      "paymentMethod": null,
+      "stores": [
+        {
+          "storeId": "storeA",
+          "bizName": "다토스국밥 경성대점",
+          "baseAddress": "부산 남구 대연동 123-12",
+          "detailAddress": "3층",
+          "logoUrl": "assets/images/store.svg"
+        }
+      ],
+      "permissions": [
+        "store_management.send_files",
+        "store_management.permissions",
+        "store_management.management",
+        "labor.details",
+        "labor.payroll",
+        "sales_menu.manage",
+        "sales_menu.margin_ranking",
+        "support.contact",
+        "support.faq"
+      ]
+    },
+    {
+      "id": "일반",
+      "role": "general_user",
+      "fullName": "김철수",
+      "shortName": "철수",
+      "birthDate": "1988-07-30",
+      "profileColor": null,
+      "paymentMethod": null,
+      "stores": [],
+      "notifications": []
+    }
+  ]
+}

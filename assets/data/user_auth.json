@@ -1,0 +1,12 @@
+{
+  "startPage": {
+    "isFirstLogin": true
+  },
+  "authPage": {
+    "phoneNumber": "01034220935",
+    "code": "000000",
+    "accessToken": "mock_access_token",
+    "refreshToken": "mock_refresh_token",
+    "isBiometricEnabled": true
+  }
+}
