@@ -63,12 +63,16 @@ class _BoardHomePageState extends State<BoardHomePage> {
                             final content = snapshot.data![index];
 
                             return ContentBox(
-                              author: content['author'],
+                              fullName: content['fullName'],
+                              shortName: content['shortName'],
+                              iconColor: content['iconColor'],
                               content: content['content'],
                               date: content['date'],
                               likes: content['likes'],
                               comments: content['comments'],
                               maxLines: 3,
+                              isPinned: content['isPinned'],
+                              isManager: content['isManager'],
                             );
                           },
                           separatorBuilder: (context, index) {
@@ -166,20 +170,28 @@ class AlertOverView extends StatelessWidget {
 
 // 게시글
 class ContentBox extends StatelessWidget {
-  final String author;
+  final String fullName;
+  final String shortName;
+  final String iconColor;
   final String content;
   final String date;
   final int likes;
   final int comments;
   final int maxLines;
+  final bool isPinned;
+  final bool isManager;
   const ContentBox({
     super.key,
-    required this.author,
+    required this.fullName,
+    required this.shortName,
+    required this.iconColor,
     required this.content,
     required this.date,
     required this.likes,
     required this.comments,
     required this.maxLines,
+    required this.isPinned,
+    required this.isManager,
   });
 
   @override
@@ -206,12 +218,12 @@ class ContentBox extends StatelessWidget {
                             width: 40.0,
                             height: 40.0,
                             decoration: BoxDecoration(
-                              color: Color(0xFF3F32D5),
+                              color: Color(int.parse('0xFF$iconColor')),
                               borderRadius: BorderRadius.circular(10.0),
                             ),
                             alignment: Alignment.center,
                             child: Text(
-                              '지철',
+                              shortName,
                               textAlign: TextAlign.center,
                               style: TextStyle(color: Colors.white),
                             ),
@@ -222,21 +234,23 @@ class ContentBox extends StatelessWidget {
                             children: [
                               Row(
                                 children: [
-                                  Text('김지철'),
-                                  Image.asset(
-                                    'assets/icons/crown.png',
-                                    width: 16.0,
-                                    height: 16.0,
-                                  ),
-                                  Image.asset(
-                                    'assets/icons/pin.png',
-                                    width: 16.0,
-                                    height: 16.0,
-                                  ),
+                                  Text(fullName),
+                                  if (isManager)
+                                    Image.asset(
+                                      'assets/icons/crown.png',
+                                      width: 16.0,
+                                      height: 16.0,
+                                    ),
+                                  if (isPinned)
+                                    Image.asset(
+                                      'assets/icons/pin.png',
+                                      width: 16.0,
+                                      height: 16.0,
+                                    ),
                                 ],
                               ),
                               Text(
-                                '2024년 12월 08일 오전 08:16분',
+                                date,
                                 style: TextStyle(
                                   color: Color(0xFF969696),
                                   fontSize: 12.0,
@@ -301,8 +315,8 @@ class ContentBox extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text('좋아요 2개'),
-                    Text('댓글 2개'),
+                    Text('좋아요 $likes개'),
+                    Text('댓글 $comments개'),
                   ],
                 ),
                 SizedBox(height: 10.0),
