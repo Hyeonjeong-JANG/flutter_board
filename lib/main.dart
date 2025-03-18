@@ -250,7 +250,7 @@ class ContentBox extends StatelessWidget {
                             content,
                             style: TextStyle(fontWeight: FontWeight.bold),
                             maxLines: maxLines,
-                            overflow: TextOverflow.ellipsis,
+                            overflow: TextOverflow.ellipsis, // ellipsis 색깔 Color(0xFF969696)로 변경하기
                           ),
                           SizedBox(height: 5.0),
                           // 더보기 옆에 붙이는 것은 나중에
@@ -261,8 +261,7 @@ class ContentBox extends StatelessWidget {
                             child: Text(
                               '더보기',
                               style: TextStyle(
-                                color: Colors.blue,
-                                fontWeight: FontWeight.bold,
+                                color: Color(0xFF969696),
                               ),
                             ),
                           ),
