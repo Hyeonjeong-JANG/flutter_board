@@ -32,6 +32,160 @@
       "isManager": false,
       "likeCount": 3,
       "commentCount": 0
+    },
+    {
+      "fullName": "이민호",
+      "shortName": "민호",
+      "iconColor": "FF5733",
+      "content": "내일 회의는 3시에 시작합니다.",
+      "date": "2024년 12월 08일 오전 10:00",
+      "isPinned": true,
+      "isManager": false,
+      "likeCount": 4,
+      "commentCount": 1
+    },
+    {
+      "fullName": "박지현",
+      "shortName": "지현",
+      "iconColor": "C70039",
+      "content": "점심시간에 회의가 있습니다.",
+      "date": "2024년 12월 08일 오전 11:00",
+      "isPinned": false,
+      "isManager": true,
+      "likeCount": 1,
+      "commentCount": 0
+    },
+    {
+      "fullName": "정우성",
+      "shortName": "우성",
+      "iconColor": "FFC300",
+      "content": "새로운 프로젝트에 대한 아이디어를 공유해주세요.",
+      "date": "2024년 12월 08일 오후 12:00",
+      "isPinned": false,
+      "isManager": false,
+      "likeCount": 2,
+      "commentCount": 1
+    },
+    {
+      "fullName": "한지민",
+      "shortName": "지민",
+      "iconColor": "DAF7A6",
+      "content": "내일은 휴무입니다.",
+      "date": "2024년 12월 08일 오후 1:00",
+      "isPinned": true,
+      "isManager": true,
+      "likeCount": 3,
+      "commentCount": 2
+    },
+    {
+      "fullName": "김태희",
+      "shortName": "태희",
+      "iconColor": "581845",
+      "content": "오늘 저녁에 팀 회식이 있습니다.",
+      "date": "2024년 12월 08일 오후 2:00",
+      "isPinned": false,
+      "isManager": false,
+      "likeCount": 5,
+      "commentCount": 3
+    },
+    {
+      "fullName": "이병헌",
+      "shortName": "병헌",
+      "iconColor": "900C3F",
+      "content": "다음 주 월요일에 중요한 발표가 있습니다.",
+      "date": "2024년 12월 08일 오후 3:00",
+      "isPinned": true,
+      "isManager": false,
+      "likeCount": 4,
+      "commentCount": 1
+    },
+    {
+      "fullName": "송중기",
+      "shortName": "중기",
+      "iconColor": "FFC300",
+      "content": "이번 주 금요일에 마감입니다.",
+      "date": "2024년 12월 08일 오후 4:00",
+      "isPinned": false,
+      "isManager": false,
+      "likeCount": 2,
+      "commentCount": 0
+    },
+    {
+      "fullName": "김소연",
+      "shortName": "소연",
+      "iconColor": "FF5733",
+      "content": "팀원들 모두 참석해주세요.",
+      "date": "2024년 12월 08일 오후 5:00",
+      "isPinned": false,
+      "isManager": false,
+      "likeCount": 1,
+      "commentCount": 1
+    },
+    {
+      "fullName": "이준기",
+      "shortName": "준기",
+      "iconColor": "C70039",
+      "content": "다음 주에 중요한 미팅이 있습니다.",
+      "date": "2024년 12월 08일 오후 6:00",
+      "isPinned": true,
+      "isManager": false,
+      "likeCount": 3,
+      "commentCount": 2
+    },
+    {
+      "fullName": "정해인",
+      "shortName": "해인",
+      "iconColor": "29A881",
+      "content": "이번 주 금요일에 발표가 있습니다.",
+      "date": "2024년 12월 08일 오후 7:00",
+      "isPinned": false,
+      "isManager": false,
+      "likeCount": 2,
+      "commentCount": 0
+    },
+    {
+      "fullName": "김유정",
+      "shortName": "유정",
+      "iconColor": "3F32D5",
+      "content": "내일은 팀 회의가 있습니다.",
+      "date": "2024년 12월 08일 오후 8:00",
+      "isPinned": true,
+      "isManager": false,
+      "likeCount": 4,
+      "commentCount": 1
+    },
+    {
+      "fullName": "이상윤",
+      "shortName": "상윤",
+      "iconColor": "9E33C2",
+      "content": "이번 주에 중요한 일정이 있습니다.",
+      "date": "2024년 12월 08일 오후 9:00",
+      "isPinned": false,
+      "isManager": false,
+      "likeCount": 1,
+      "commentCount": 0
+    },
+    {
+      "fullName": "박서준",
+      "shortName": "서준",
+      "iconColor": "FFC300",
+      "content": "팀원들 모두 참석해주세요.",
+      "date": "2024년 12월 08일 오후 10:00",
+      "isPinned": false,
+      "isManager": false,
+      "likeCount": 3,
+      "commentCount": 2
+    },
+    {
+      "fullName": "한지민",
+      "shortName": "지민",
+      "iconColor": "DAF7A6",
+      "content": "내일은 휴무입니다.",
+      "date": "2024년 12월 08일 오후 11:00",
+      "isPinned": true,
+      "isManager": false,
+      "likeCount": 3,
+      "commentCount": 2
     }
   ]
 }
