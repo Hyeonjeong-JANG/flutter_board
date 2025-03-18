@@ -1,13 +1,15 @@
+import 'package:board/feature/presentation/pages/render_board_home/viewmodel/render_board_home_viewmodel.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 
 // 더미 데이터 로드
-Future<List<Map<String, dynamic>>> loadBoardContents() async {
+Future<List<RenderBoardHomeViewModel>> loadBoardContents() async {
   String jsonString =
       await rootBundle.loadString('assets/data/board_contents.json');
   final jsonData = json.decode(jsonString);
-  return List<Map<String, dynamic>>.from(jsonData['boardContents']);
+  return List<RenderBoardHomeViewModel>.from(jsonData['boardContents']
+      .map((x) => RenderBoardHomeViewModel.fromJson(x)));
 }
 
 class BoardHomePage extends StatefulWidget {
@@ -18,7 +20,7 @@ class BoardHomePage extends StatefulWidget {
 }
 
 class _BoardHomePageState extends State<BoardHomePage> {
-  late Future<List<Map<String, dynamic>>> boardContents;
+  late Future<List<RenderBoardHomeViewModel>> boardContents;
 
   @override
   void initState() {
@@ -43,9 +45,10 @@ class _BoardHomePageState extends State<BoardHomePage> {
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
-              child: FutureBuilder(
+              child: FutureBuilder<List<RenderBoardHomeViewModel>>(
                 future: boardContents,
-                builder: (context, AsyncSnapshot<List> snapshot) {
+                builder: (context,
+                    AsyncSnapshot<List<RenderBoardHomeViewModel>> snapshot) {
                   if (!snapshot.hasData) {
                     return Center(child: CircularProgressIndicator());
                   }
@@ -63,16 +66,8 @@ class _BoardHomePageState extends State<BoardHomePage> {
                             final content = snapshot.data![index];
 
                             return ContentBox(
-                              fullName: content['fullName'],
-                              shortName: content['shortName'],
-                              iconColor: content['iconColor'],
-                              content: content['content'],
-                              date: content['date'],
-                              likes: content['likes'],
-                              comments: content['comments'],
+                              content: content,
                               maxLines: 3,
-                              isPinned: content['isPinned'],
-                              isManager: content['isManager'],
                             );
                           },
                           separatorBuilder: (context, index) {
@@ -170,28 +165,12 @@ class AlertOverView extends StatelessWidget {
 
 // 게시글
 class ContentBox extends StatelessWidget {
-  final String fullName;
-  final String shortName;
-  final String iconColor;
-  final String content;
-  final String date;
-  final int likes;
-  final int comments;
+  final RenderBoardHomeViewModel content;
   final int maxLines;
-  final bool isPinned;
-  final bool isManager;
   const ContentBox({
     super.key,
-    required this.fullName,
-    required this.shortName,
-    required this.iconColor,
     required this.content,
-    required this.date,
-    required this.likes,
-    required this.comments,
     required this.maxLines,
-    required this.isPinned,
-    required this.isManager,
   });
 
   @override
@@ -218,12 +197,12 @@ class ContentBox extends StatelessWidget {
                             width: 40.0,
                             height: 40.0,
                             decoration: BoxDecoration(
-                              color: Color(int.parse('0xFF$iconColor')),
+                              color: Color(int.parse('0xFF${content.iconColor}')),
                               borderRadius: BorderRadius.circular(10.0),
                             ),
                             alignment: Alignment.center,
                             child: Text(
-                              shortName,
+                              content.shortName,
                               textAlign: TextAlign.center,
                               style: TextStyle(color: Colors.white),
                             ),
@@ -231,17 +210,18 @@ class ContentBox extends StatelessWidget {
                           SizedBox(width: 10.0),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Row(
                                 children: [
-                                  Text(fullName),
-                                  if (isManager)
+                                  Text(content.fullName),
+                                  if (content.isManager)
                                     Image.asset(
                                       'assets/icons/crown.png',
                                       width: 16.0,
                                       height: 16.0,
                                     ),
-                                  if (isPinned)
+                                  if (content.isPinned)
                                     Image.asset(
                                       'assets/icons/pin.png',
                                       width: 16.0,
@@ -250,7 +230,7 @@ class ContentBox extends StatelessWidget {
                                 ],
                               ),
                               Text(
-                                date,
+                                content.date,
                                 style: TextStyle(
                                   color: Color(0xFF969696),
                                   fontSize: 12.0,
@@ -287,7 +267,7 @@ class ContentBox extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            content,
+                            content.content,
                             style: TextStyle(fontWeight: FontWeight.bold),
                             maxLines: maxLines,
                             overflow: TextOverflow
@@ -312,11 +292,12 @@ class ContentBox extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: 20.0),
+                // 좋아요, 댓글 수
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text('좋아요 $likes개'),
-                    Text('댓글 $comments개'),
+                    Text('좋아요 ${content.likeCount}개'),
+                    Text('댓글 ${content.commentCount}개'),
                   ],
                 ),
                 SizedBox(height: 10.0),
@@ -325,6 +306,7 @@ class ContentBox extends StatelessWidget {
                   height: 1.0,
                 ),
                 SizedBox(height: 10.0),
+                // 좋아요, 댓글달기 버튼
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [

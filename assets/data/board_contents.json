@@ -8,8 +8,8 @@
       "date": "2024년 12월 08일 오전 08:16",
       "isPinned": true,
       "isManager": true,
-      "likes": 2,
-      "comments": 2
+      "likeCount": 2,
+      "commentCount": 2
     },
     {
       "fullName": "김철수",
@@ -19,8 +19,8 @@
       "date": "2024년 12월 08일 오전 09:00",
       "isPinned": false,
       "isManager": false,
-      "likes": 5,
-      "comments": 1
+      "likeCount": 5,
+      "commentCount": 1
     },
     {
       "fullName": "최지영",
@@ -30,8 +30,8 @@
       "date": "2024년 12월 08일 오전 09:30",
       "isPinned": false,
       "isManager": false,
-      "likes": 3,
-      "comments": 0
+      "likeCount": 3,
+      "commentCount": 0
     }
   ]
 }
