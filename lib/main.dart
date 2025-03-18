@@ -189,7 +189,13 @@ class ContentBox extends StatelessWidget {
                             height: 24.0,
                           ),
                           SizedBox(width: 5.0),
-                          Text('좋아요'),
+                          Text(
+                            '좋아요',
+                            style: TextStyle(
+                              fontSize: 16.0,
+                              color: Color(0xFF969696),
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -204,7 +210,13 @@ class ContentBox extends StatelessWidget {
                             height: 24.0,
                           ),
                           SizedBox(width: 5.0),
-                          Text('댓글달기'),
+                          Text(
+                            '댓글달기',
+                            style: TextStyle(
+                              fontSize: 16.0,
+                              color: Color(0xFF969696),
+                            ),
+                          ),
                         ],
                       ),
                     ),
