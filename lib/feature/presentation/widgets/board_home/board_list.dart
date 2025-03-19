@@ -10,7 +10,7 @@ class BoardList extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) { 
-    final boardList = ref.watch(boardHomeProvider.notifier).boardListContents;
+    final boardList = ref.watch(boardHomeProvider);
 
     return Expanded(
       child: ListView.separated(

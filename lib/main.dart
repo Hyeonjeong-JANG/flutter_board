@@ -8,7 +8,22 @@ void main() async {
   await initializeDateFormatting('ko_KR', null);
   runApp(
     ProviderScope(
-      child: BoardHomePage(),
+      child: MyApp(),
     ),
   );
+}
+
+class MyApp extends HookConsumerWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: BoardHomePage(),
+    );
+  }
 }

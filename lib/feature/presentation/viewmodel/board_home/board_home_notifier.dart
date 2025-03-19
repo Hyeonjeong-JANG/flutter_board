@@ -7,13 +7,13 @@ import 'package:flutter/services.dart';
 class BoardHomeNotifier extends Notifier<List<BoardHomeViewModel>> {
   @override
   List<BoardHomeViewModel> build() {
-    fetchContents();
+    loadBoardContents();
 
     return [];
   }
 
   // 데이터를 가져오는 메서드
-  Future<void> fetchContents() async {
+  Future<void> loadBoardContents() async {
     String jsonString =
         await rootBundle.loadString('assets/data/board_contents.json');
     final jsonData = json.decode(jsonString);
