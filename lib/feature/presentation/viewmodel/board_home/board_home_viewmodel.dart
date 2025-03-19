@@ -1,9 +1,9 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'render_board_home_viewmodel.g.dart';
+part 'board_home_viewmodel.g.dart';
 
 @JsonSerializable()
-class RenderBoardHomeViewModel {
+class BoardHomeViewModel {
   final String fullName;
   final String shortName;
   final String iconColor;
@@ -14,7 +14,7 @@ class RenderBoardHomeViewModel {
   final int likeCount;
   final int commentCount;
 
-  RenderBoardHomeViewModel({
+  BoardHomeViewModel({
     required this.fullName,
     required this.shortName,
     required this.iconColor,
@@ -26,6 +26,6 @@ class RenderBoardHomeViewModel {
     required this.commentCount,
   });
 
-  factory RenderBoardHomeViewModel.fromJson(Map<String, dynamic> json) =>
-      _$RenderBoardHomeViewModelFromJson(json);
+  factory BoardHomeViewModel.fromJson(Map<String, dynamic> json) =>
+      _$BoardHomeViewModelFromJson(json);
 }

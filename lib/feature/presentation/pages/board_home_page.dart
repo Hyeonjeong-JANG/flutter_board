@@ -1,15 +1,15 @@
-import 'package:board/feature/presentation/pages/render_board_home/viewmodel/render_board_home_viewmodel.dart';
+import 'package:board/feature/presentation/viewmodel/board_home/board_home_viewmodel.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 
 // 더미 데이터 로드
-Future<List<RenderBoardHomeViewModel>> loadBoardContents() async {
+Future<List<BoardHomeViewModel>> loadBoardContents() async {
   String jsonString =
       await rootBundle.loadString('assets/data/board_contents.json');
   final jsonData = json.decode(jsonString);
-  return List<RenderBoardHomeViewModel>.from(jsonData['boardContents']
-      .map((x) => RenderBoardHomeViewModel.fromJson(x)));
+  return List<BoardHomeViewModel>.from(jsonData['boardContents']
+      .map((x) => BoardHomeViewModel.fromJson(x)));
 }
 
 class BoardHomePage extends StatefulWidget {
@@ -20,7 +20,7 @@ class BoardHomePage extends StatefulWidget {
 }
 
 class _BoardHomePageState extends State<BoardHomePage> {
-  late Future<List<RenderBoardHomeViewModel>> boardContents;
+  late Future<List<BoardHomeViewModel>> boardContents;
 
   @override
   void initState() {
@@ -45,10 +45,10 @@ class _BoardHomePageState extends State<BoardHomePage> {
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
-              child: FutureBuilder<List<RenderBoardHomeViewModel>>(
+              child: FutureBuilder<List<BoardHomeViewModel>>(
                 future: boardContents,
                 builder: (context,
-                    AsyncSnapshot<List<RenderBoardHomeViewModel>> snapshot) {
+                    AsyncSnapshot<List<BoardHomeViewModel>> snapshot) {
                   if (!snapshot.hasData) {
                     return Center(child: CircularProgressIndicator());
                   }
@@ -165,7 +165,7 @@ class AlertOverView extends StatelessWidget {
 
 // 게시글
 class ContentBox extends StatelessWidget {
-  final RenderBoardHomeViewModel content;
+  final BoardHomeViewModel content;
   final int maxLines;
   const ContentBox({
     super.key,

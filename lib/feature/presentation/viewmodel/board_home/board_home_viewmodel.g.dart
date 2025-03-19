@@ -1,14 +1,13 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'render_board_home_viewmodel.dart';
+part of 'board_home_viewmodel.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-RenderBoardHomeViewModel _$RenderBoardHomeViewModelFromJson(
-        Map<String, dynamic> json) =>
-    RenderBoardHomeViewModel(
+BoardHomeViewModel _$BoardHomeViewModelFromJson(Map<String, dynamic> json) =>
+    BoardHomeViewModel(
       fullName: json['fullName'] as String,
       shortName: json['shortName'] as String,
       iconColor: json['iconColor'] as String,
@@ -20,8 +19,7 @@ RenderBoardHomeViewModel _$RenderBoardHomeViewModelFromJson(
       commentCount: (json['commentCount'] as num).toInt(),
     );
 
-Map<String, dynamic> _$RenderBoardHomeViewModelToJson(
-        RenderBoardHomeViewModel instance) =>
+Map<String, dynamic> _$BoardHomeViewModelToJson(BoardHomeViewModel instance) =>
     <String, dynamic>{
       'fullName': instance.fullName,
       'shortName': instance.shortName,
