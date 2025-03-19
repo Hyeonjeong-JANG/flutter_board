@@ -1,5 +1,6 @@
 import 'package:board/core/constants/color.dart';
 import 'package:board/core/constants/size.dart';
+import 'package:board/core/utils/date_formatter.dart';
 import 'package:board/feature/presentation/viewmodel/board_home/board_home_viewmodel.dart';
 import 'package:board/feature/presentation/widgets/board_home/content_bottom_button.dart';
 import 'package:flutter/material.dart';
@@ -75,7 +76,7 @@ class ContentBox extends HookConsumerWidget {
                                 ],
                               ),
                               Text(
-                                content.createdAt,
+                                DateFormatter.formatToKoreanDateTime(content.createdAt),
                                 style: TextStyle(
                                   color: AppColor.grey,
                                   fontSize: 12.0,
