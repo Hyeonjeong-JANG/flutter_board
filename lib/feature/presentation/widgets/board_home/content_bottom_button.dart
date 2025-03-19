@@ -21,8 +21,8 @@ class ContentBottomButton extends StatelessWidget {
         children: [
           Image.asset(
             iconPath,
-            width: AppSizes.iconSizeM,
-            height: AppSizes.iconSizeM,
+            width: 16.0,
+            height: 16.0,
           ),
           SizedBox(width: AppSizes.spacingS),
           Text(

@@ -64,14 +64,14 @@ class ContentBox extends HookConsumerWidget {
                                   if (content.isManager)
                                     Image.asset(
                                       'assets/icons/crown.png',
-                                      width: AppSizes.iconSizeS,
-                                      height: AppSizes.iconSizeS,
+                                      width: 16.0,
+                                      height: 16.0,
                                     ),
                                   if (content.pinInfo.isPinned)
                                     Image.asset(
                                       'assets/icons/pin.png',
-                                      width: AppSizes.iconSizeS,
-                                      height: AppSizes.iconSizeS,
+                                      width: 16.0,
+                                      height: 16.0,
                                     ),
                                 ],
                               ),
