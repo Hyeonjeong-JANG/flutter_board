@@ -47,6 +47,29 @@ class AlertContentsDropdownList extends HookConsumerWidget {
             ),
           ),
         ),
+        if (isDropdownOpen)
+          Container(
+            padding: EdgeInsets.all(AppSizes.spacingM),
+            decoration: BoxDecoration(
+              color: AppColor.white,
+              borderRadius: BorderRadius.circular(AppSizes.borderRadiusL),
+            ),
+            child: Consumer(
+              builder: (context, ref, child) {
+                final alertPosts =
+                    ref.watch(boardHomeProvider.notifier).alertBoardContents;
+                return Column(
+                  children: alertPosts
+                      .map((post) => Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 4.0),
+                            child: Text(post.content,
+                                style: TextStyle(fontSize: 14)),
+                          ))
+                      .toList(),
+                );
+              },
+            ),
+          ),
       ],
     );
   }
