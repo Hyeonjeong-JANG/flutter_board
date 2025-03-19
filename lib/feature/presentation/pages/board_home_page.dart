@@ -1,7 +1,7 @@
 import 'package:board/core/constants/size.dart';
 import 'package:board/core/widgets/app_bar_with_back_button.dart';
 import 'package:board/feature/presentation/viewmodel/board_home/board_home_viewmodel.dart';
-import 'package:board/feature/presentation/widgets/board_home/alert_over_view.dart';
+import 'package:board/feature/presentation/widgets/board_home/pinnedContentsDropdownList.dart';
 import 'package:board/feature/presentation/widgets/board_home/board_list.dart';
 import 'package:board/feature/presentation/widgets/floating_gradient_button_.dart';
 import 'package:flutter/material.dart';
@@ -47,6 +47,7 @@ class _BoardHomePageState extends State<BoardHomePage> {
                 future: boardContents,
                 builder: (context,
                     AsyncSnapshot<List<BoardHomeViewModel>> snapshot) {
+                      print(snapshot.error);
                   if (!snapshot.hasData) {
                     return Center(child: CircularProgressIndicator());
                   }

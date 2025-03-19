@@ -58,14 +58,14 @@ class ContentBox extends StatelessWidget {
                             children: [
                               Row(
                                 children: [
-                                  Text(content.fullName),
+                                  Text(content.userName),
                                   if (content.isManager)
                                     Image.asset(
                                       'assets/icons/crown.png',
                                       width: AppSizes.iconSizeS,
                                       height: AppSizes.iconSizeS,
                                     ),
-                                  if (content.isPinned)
+                                  if (content.pinInfo.isPinned)
                                     Image.asset(
                                       'assets/icons/pin.png',
                                       width: AppSizes.iconSizeS,
@@ -140,8 +140,8 @@ class ContentBox extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text('좋아요 ${content.likeCount}개'),
-                    Text('댓글 ${content.commentCount}개'),
+                    Text('좋아요 ${content.likeCounts}개'),
+                    Text('댓글 ${content.replyCounts}개'),
                   ],
                 ),
                 SizedBox(height: AppSizes.spacingM),
