@@ -3,7 +3,9 @@ import 'package:board/core/constants/size.dart';
 import 'package:board/core/widgets/dropdown_arrows.dart';
 import 'package:board/feature/presentation/viewmodel/board_home/board_home_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+
 
 // 알림 요약
 class AlertContentsDropdownList extends HookConsumerWidget {
@@ -11,14 +13,15 @@ class AlertContentsDropdownList extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final isDropdownOpen = ref.watch(isDropdownOpenProvider);
-    final isDropdownOpenNotifier = ref.read(isDropdownOpenProvider.notifier);
+    // 알림 드롭다운 상태
+    final isDropdownOpen = useState(false);
+    
 
     return Column(
       children: [
         GestureDetector(
           onTap: () {
-            isDropdownOpenNotifier.state = !isDropdownOpen;
+            isDropdownOpen.value = !isDropdownOpen.value;
           },
           child: Container(
             padding: EdgeInsets.all(AppSizes.spacingM),
@@ -40,14 +43,14 @@ class AlertContentsDropdownList extends HookConsumerWidget {
                     Text('오늘 주방에 파 10kg 주문했습니다.'),
                   ],
                 ),
-                isDropdownOpen
+                isDropdownOpen.value
                     ? DropdownArrows(imgPath: 'assets/icons/arrow_up.png')
                     : DropdownArrows(imgPath: 'assets/icons/arrow_down.png'),
               ],
             ),
           ),
         ),
-        if (isDropdownOpen)
+        if (isDropdownOpen.value)
           Container(
             padding: EdgeInsets.all(AppSizes.spacingM),
             decoration: BoxDecoration(
