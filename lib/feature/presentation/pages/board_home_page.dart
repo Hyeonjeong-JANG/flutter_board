@@ -47,7 +47,6 @@ class _BoardHomePageState extends State<BoardHomePage> {
                 future: boardContents,
                 builder: (context,
                     AsyncSnapshot<List<BoardHomeViewModel>> snapshot) {
-                      print(snapshot.error);
                   if (!snapshot.hasData) {
                     return Center(child: CircularProgressIndicator());
                   }

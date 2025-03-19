@@ -32,10 +32,10 @@
       "pinInfo": {
         "isAlertPinned": false,
         "alertPinnedDate": "",
-        "isPinned": false,
-        "pinDate": "",
-        "isTopPinned": false,
-        "topPinnedDate": ""
+        "isPinned": true,
+        "pinDate": "2024년 12월 08일 오전 09:00",
+        "isTopPinned": true,
+        "topPinnedDate": "2024년 12월 09일 오전 09:00"
       }
     },
     {
@@ -49,8 +49,8 @@
       "replyCounts": 0,
       "content": "동파 방지를 위해 퇴근 전 수도를 틀고 가주세요! \n아주 조금 물이 흐르는 정도(졸졸졸)로 틀고 퇴근해 주시면 내일 근무자가 편합니다.\n매장 근처에 사는 분 중간에 확인 함 해주시면 감사하겠습니다. ",
       "pinInfo": {
-        "isAlertPinned": false,
-        "alertPinnedDate": "",
+        "isAlertPinned": true,
+        "alertPinnedDate": "2024년 12월 08일 오전 09:30",
         "isPinned": false,
         "pinDate": "",
         "isTopPinned": false,
@@ -68,8 +68,8 @@
       "replyCounts": 1,
       "content": "내일 회의는 3시에 시작합니다.",
       "pinInfo": {
-        "isAlertPinned": false,
-        "alertPinnedDate": "",
+        "isAlertPinned": true,
+        "alertPinnedDate": "2024년 12월 08일 오전 10:00",
         "isPinned": true,
         "pinDate": "",
         "isTopPinned": false,
@@ -125,8 +125,8 @@
       "replyCounts": 2,
       "content": "내일은 휴무입니다.",
       "pinInfo": {
-        "isAlertPinned": false,
-        "alertPinnedDate": "",
+        "isAlertPinned": true,
+        "alertPinnedDate": "2024년 12월 08일 오후 1:00",
         "isPinned": true,
         "pinDate": "",
         "isTopPinned": false,
