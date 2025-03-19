@@ -1,3 +1,4 @@
+import 'package:board/core/router/router.dart';
 import 'package:board/feature/presentation/pages/board_home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -18,12 +19,15 @@ class MyApp extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return MaterialApp(
+    final userId = "user1";
+    final router = ref.watch(routerProvider(userId));
+
+    return MaterialApp.router(
+      routerConfig: router,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: BoardHomePage(),
     );
   }
 }

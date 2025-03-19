@@ -5,7 +5,12 @@ import 'package:flutter/material.dart';
 
 class FloatingGradientButton extends StatelessWidget {
   final String title;
-  const FloatingGradientButton({super.key, required this.title});
+  final VoidCallback onTap;
+  const FloatingGradientButton({
+    super.key,
+    required this.title,
+    required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -16,9 +21,7 @@ class FloatingGradientButton extends StatelessWidget {
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-          onTap: () {
-            // 게시글 작성하기 동작
-          },
+          onTap: onTap,
           child: Container(
             width: double.infinity,
             height: 60.0,

@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 // // 더미 데이터 로드
@@ -70,9 +71,12 @@ class BoardHomePage extends HookConsumerWidget {
                   ),
             FloatingGradientButton(
               title: '게시글 작성하기',
-          ),
-        ],
-      ),
+              onTap: () {
+                context.go('/boards/write');
+              },
+            ),
+          ],
+        ),
     );
   }
 }
