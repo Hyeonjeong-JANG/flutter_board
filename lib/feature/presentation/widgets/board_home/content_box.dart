@@ -73,10 +73,17 @@ class ContentBox extends HookConsumerWidget {
                                       width: 16.0,
                                       height: 16.0,
                                     ),
+                                  if (content.pinInfo.isAlertPinned)
+                                    Image.asset(
+                                      'assets/icons/speaker.png',
+                                      width: 16.0,
+                                      height: 16.0,
+                                    ),
                                 ],
                               ),
                               Text(
-                                DateFormatter.formatToKoreanDateTime(content.createdAt),
+                                DateFormatter.formatToKoreanDateTime(
+                                    content.createdAt),
                                 style: TextStyle(
                                   color: AppColor.grey,
                                   fontSize: 12.0,
