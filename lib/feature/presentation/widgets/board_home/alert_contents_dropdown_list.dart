@@ -3,8 +3,8 @@ import 'package:board/core/constants/size.dart';
 import 'package:flutter/material.dart';
 
 // 알림 요약
-class PinnedContentsDropdownList extends StatelessWidget {
-  const PinnedContentsDropdownList({super.key});
+class AlertContentsDropdownList extends StatelessWidget {
+  const AlertContentsDropdownList({super.key});
 
   @override
   Widget build(BuildContext context) {

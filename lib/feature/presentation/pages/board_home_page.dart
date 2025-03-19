@@ -1,7 +1,7 @@
 import 'package:board/core/constants/size.dart';
 import 'package:board/core/widgets/app_bar_with_back_button.dart';
 import 'package:board/feature/presentation/viewmodel/board_home/board_home_provider.dart';
-import 'package:board/feature/presentation/widgets/board_home/pinnedContentsDropdownList.dart';
+import 'package:board/feature/presentation/widgets/board_home/alert_contents_dropdown_list.dart';
 import 'package:board/feature/presentation/widgets/board_home/board_list.dart';
 import 'package:board/feature/presentation/widgets/floating_gradient_button_.dart';
 import 'package:flutter/material.dart';
@@ -33,7 +33,7 @@ class BoardHomePage extends HookConsumerWidget {
                       const EdgeInsets.symmetric(horizontal: AppSizes.gapL),
                   child: Column(
                     children: [
-                      PinnedContentsDropdownList(),
+                      AlertContentsDropdownList(),
                       SizedBox(height: AppSizes.spacingL),
                       BoardList(),
                     ],
