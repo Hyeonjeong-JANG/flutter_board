@@ -1,3 +1,5 @@
+import 'package:board/core/constants/color.dart';
+import 'package:board/core/constants/size.dart';
 import 'package:board/feature/presentation/viewmodel/board_home/board_home_viewmodel.dart';
 import 'package:board/feature/presentation/widgets/board_home/content_bottom_button.dart';
 import 'package:flutter/material.dart';
@@ -15,10 +17,10 @@ class ContentBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(20.0),
+      padding: EdgeInsets.all(AppSizes.spacingL),
       decoration: BoxDecoration(
         color: Color(0xFFFFFFFF),
-        borderRadius: BorderRadius.circular(20.0),
+        borderRadius: BorderRadius.circular(AppSizes.borderRadiusXL),
       ),
       child: Row(
         children: [
@@ -36,8 +38,11 @@ class ContentBox extends StatelessWidget {
                             width: 40.0,
                             height: 40.0,
                             decoration: BoxDecoration(
-                              color: Color(int.parse('0xFF${content.iconColor}')),
-                              borderRadius: BorderRadius.circular(10.0),
+                              color:
+                                  Color(int.parse('0xFF${content.iconColor}')),
+                              borderRadius: BorderRadius.circular(
+                                AppSizes.borderRadiusL,
+                              ),
                             ),
                             alignment: Alignment.center,
                             child: Text(
@@ -46,7 +51,7 @@ class ContentBox extends StatelessWidget {
                               style: TextStyle(color: Colors.white),
                             ),
                           ),
-                          SizedBox(width: 10.0),
+                          SizedBox(width: AppSizes.spacingM),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -57,21 +62,21 @@ class ContentBox extends StatelessWidget {
                                   if (content.isManager)
                                     Image.asset(
                                       'assets/icons/crown.png',
-                                      width: 16.0,
-                                      height: 16.0,
+                                      width: AppSizes.iconSizeS,
+                                      height: AppSizes.iconSizeS,
                                     ),
                                   if (content.isPinned)
                                     Image.asset(
                                       'assets/icons/pin.png',
-                                      width: 16.0,
-                                      height: 16.0,
+                                      width: AppSizes.iconSizeS,
+                                      height: AppSizes.iconSizeS,
                                     ),
                                 ],
                               ),
                               Text(
                                 content.date,
                                 style: TextStyle(
-                                  color: Color(0xFF969696),
+                                  color: AppColor.grey,
                                   fontSize: 12.0,
                                 ),
                               ),
@@ -88,8 +93,8 @@ class ContentBox extends StatelessWidget {
                             onPressed: () {},
                             icon: const Icon(
                               Icons.more_horiz,
-                              color: Color(0xFF969696),
-                              size: 24.0,
+                              color: AppColor.grey,
+                              size: AppSizes.iconSizeS,
                             ),
                           ),
                         ),
@@ -97,7 +102,7 @@ class ContentBox extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(height: 20.0),
+                SizedBox(height: AppSizes.spacingL),
                 // 글 내용
                 Row(
                   children: [
@@ -112,7 +117,7 @@ class ContentBox extends StatelessWidget {
                             overflow: TextOverflow
                                 .ellipsis, // ellipsis 색깔 Color(0xFF969696)로 변경하기
                           ),
-                          SizedBox(height: 5.0),
+                          SizedBox(height: AppSizes.spacingS),
                           // 더보기 옆에 붙이는 것은 나중에
                           GestureDetector(
                             onTap: () {
@@ -121,7 +126,7 @@ class ContentBox extends StatelessWidget {
                             child: Text(
                               '더보기',
                               style: TextStyle(
-                                color: Color(0xFF969696),
+                                color: AppColor.grey,
                               ),
                             ),
                           ),
@@ -130,7 +135,7 @@ class ContentBox extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 20.0),
+                SizedBox(height: AppSizes.spacingL),
                 // 좋아요, 댓글 수
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -139,12 +144,12 @@ class ContentBox extends StatelessWidget {
                     Text('댓글 ${content.commentCount}개'),
                   ],
                 ),
-                SizedBox(height: 10.0),
+                SizedBox(height: AppSizes.spacingM),
                 Divider(
-                  color: Color(0xFFE5E5E5),
+                  color: AppColor.lightLineGrey,
                   height: 1.0,
                 ),
-                SizedBox(height: 10.0),
+                SizedBox(height: AppSizes.spacingM),
                 // 좋아요, 댓글달기 버튼
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -167,4 +172,3 @@ class ContentBox extends StatelessWidget {
     );
   }
 }
-

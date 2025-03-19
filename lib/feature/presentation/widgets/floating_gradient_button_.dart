@@ -1,3 +1,5 @@
+import 'package:board/core/constants/size.dart';
+import 'package:board/core/constants/style.dart';
 import 'package:flutter/material.dart';
 
 class FloatingGradientButton extends StatelessWidget {
@@ -29,16 +31,12 @@ class FloatingGradientButton extends StatelessWidget {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
-              borderRadius: BorderRadius.circular(50.0),
+              borderRadius: BorderRadius.circular(AppSizes.borderRadiusXXL),
             ),
             child: Center(
               child: Text(
                 title,
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 16.0,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: AppTextStyle.button,
               ),
             ),
           ),

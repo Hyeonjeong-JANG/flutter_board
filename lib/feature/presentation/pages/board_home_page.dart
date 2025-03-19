@@ -1,3 +1,5 @@
+import 'package:board/core/constants/size.dart';
+import 'package:board/core/widgets/app_bar_with_back_button.dart';
 import 'package:board/feature/presentation/viewmodel/board_home/board_home_viewmodel.dart';
 import 'package:board/feature/presentation/widgets/board_home/alert_over_view.dart';
 import 'package:board/feature/presentation/widgets/board_home/board_list.dart';
@@ -36,18 +38,11 @@ class _BoardHomePageState extends State<BoardHomePage> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          leading: IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.arrow_back_ios),
-          ),
-          title: Text('점포 공지', textAlign: TextAlign.center),
-          centerTitle: true,
-        ),
+        appBar: AppBarWithBackButton(title: '점포 공지'),
         body: Stack(
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              padding: const EdgeInsets.symmetric(horizontal: AppSizes.gapL),
               child: FutureBuilder<List<BoardHomeViewModel>>(
                 future: boardContents,
                 builder: (context,
@@ -57,11 +52,8 @@ class _BoardHomePageState extends State<BoardHomePage> {
                   }
                   return Column(
                     children: [
-                      // 알림 요약
-                      AlertOverView(),
-
-                      SizedBox(height: 20.0),
-                      // 게시물
+                      PinnedContentsDropdownList(),
+                      SizedBox(height: AppSizes.spacingL),
                       BoardList(contents: snapshot.data!),
                     ],
                   );

@@ -1,16 +1,18 @@
+import 'package:board/core/constants/color.dart';
+import 'package:board/core/constants/size.dart';
 import 'package:flutter/material.dart';
 
 // 알림 요약
-class AlertOverView extends StatelessWidget {
-  const AlertOverView({super.key});
+class PinnedContentsDropdownList extends StatelessWidget {
+  const PinnedContentsDropdownList({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10.0),
+      padding: EdgeInsets.all(AppSizes.spacingM),
       decoration: BoxDecoration(
-        color: Color(0xFFFFFFFF),
-        borderRadius: BorderRadius.circular(20.0),
+        color: AppColor.white,
+        borderRadius: BorderRadius.circular(AppSizes.borderRadiusXL),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -19,17 +21,17 @@ class AlertOverView extends StatelessWidget {
             children: [
               Image.asset(
                 'assets/icons/speaker.png',
-                width: 28.0,
-                height: 28.0,
+                width: AppSizes.iconSizeM,
+                height: AppSizes.iconSizeM,
               ),
-              SizedBox(width: 5.0),
+              SizedBox(width: AppSizes.spacingS),
               Text('오늘 주방에 파 10kg 주문했습니다.'),
             ],
           ),
           Image.asset(
             'assets/icons/arrow_down.png',
-            width: 28.0,
-            height: 28.0,
+            width: AppSizes.iconSizeM,
+            height: AppSizes.iconSizeM,
           ),
         ],
       ),

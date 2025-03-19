@@ -1,3 +1,5 @@
+import 'package:board/core/constants/color.dart';
+import 'package:board/core/constants/size.dart';
 import 'package:flutter/material.dart';
 
 // 게시물 하단 버튼
@@ -13,21 +15,21 @@ class ContentBottomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+      padding: const EdgeInsets.symmetric(horizontal: AppSizes.spacingL),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(
             iconPath,
-            width: 24.0,
-            height: 24.0,
+            width: AppSizes.iconSizeM,
+            height: AppSizes.iconSizeM,
           ),
-          SizedBox(width: 5.0),
+          SizedBox(width: AppSizes.spacingS),
           Text(
             title,
             style: TextStyle(
               fontSize: 16.0,
-              color: Color(0xFF969696),
+              color: AppColor.grey,
             ),
           ),
         ],

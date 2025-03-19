@@ -1,3 +1,4 @@
+import 'package:board/core/constants/size.dart';
 import 'package:board/feature/presentation/viewmodel/board_home/board_home_viewmodel.dart';
 import 'package:board/feature/presentation/widgets/board_home/content_box.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class BoardList extends StatelessWidget {
           );
         },
         separatorBuilder: (context, index) {
-          return SizedBox(height: 20.0);
+          return SizedBox(height: AppSizes.spacingL);
         },
       ),
     );
