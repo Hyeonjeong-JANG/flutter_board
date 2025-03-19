@@ -11,7 +11,7 @@ class AppBarWithBackButton extends StatelessWidget
     return AppBar(
       leading: IconButton(
         onPressed: () {
-         context.pop();
+          context.pop();
         },
         icon: const Icon(Icons.arrow_back_ios),
       ),

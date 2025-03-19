@@ -10,6 +10,11 @@ class BoardWritePage extends StatelessWidget {
       appBar: AppBarWithBackButton(
         title: '게시글 작성',
       ),
+      body: Column(
+        children: [
+          Text('게시글 작성'),
+        ],
+      ),
     );
   }
 }
