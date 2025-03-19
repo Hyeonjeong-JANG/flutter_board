@@ -12,18 +12,18 @@
       "content": "오늘 주방에 파 10kg 주문했습니다. \n눈이 와서 배송이 어려운데 가락시장에서 픽업 가능한 분 픽업 해주세요! 🙏 픽업 해 주시면 감사하겠습니다.",
       "pinInfo": {
         "isAlertPinned": true,
-        "alertPinnedAt": "2024-12-08T08:16",
+        "alertPinnedAt": "2024-12-08T08:16:00",
         "isPinned": true,
-        "pinnedAt": "2024-12-08T08:16",
+        "pinnedAt": "2024-12-08T08:16:00",
         "isTopPinned": true,
-        "topPinnedAt": "2024-12-08T08:16"
+        "topPinnedAt": "2024-12-08T08:16:00"
       }
     },
     {
       "userName": "김철수",
       "shortName": "철수",
       "iconColor": "9E33C2",
-      "createdAt": "2024-12-08T09:00",
+      "createdAt": "2024-12-08T09:00:17",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 5,
@@ -33,16 +33,16 @@
         "isAlertPinned": false,
         "alertPinnedAt": "",
         "isPinned": true,
-        "pinnedAt": "2024-12-08T09:00",
+        "pinnedAt": "2024-12-08T09:00:17",
         "isTopPinned": true,
-        "topPinnedAt": "2024-12-08T09:00"
+        "topPinnedAt": "2024-12-08T09:00:17"
       }
     },
     {
       "userName": "최지영",
       "shortName": "지영",
       "iconColor": "29A881",
-      "createdAt": "2024-12-08T09:30",
+      "createdAt": "2024-12-08T09:30:30",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 3,
@@ -50,7 +50,7 @@
       "content": "동파 방지를 위해 퇴근 전 수도를 틀고 가주세요! \n아주 조금 물이 흐르는 정도(졸졸졸)로 틀고 퇴근해 주시면 내일 근무자가 편합니다.\n매장 근처에 사는 분 중간에 확인 함 해주시면 감사하겠습니다. ",
       "pinInfo": {
         "isAlertPinned": true,
-        "alertPinnedAt": "2024-12-08T09:30",
+        "alertPinnedAt": "2024-12-08T09:30:30",
         "isPinned": false,
         "pinnedAt": "",
         "isTopPinned": false,
@@ -61,7 +61,7 @@
       "userName": "이민호",
       "shortName": "민호",
       "iconColor": "FF5733",
-      "createdAt": "2024-12-08T10:00",
+      "createdAt": "2024-12-08T10:00:45",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 4,
@@ -69,9 +69,9 @@
       "content": "내일 회의는 3시에 시작합니다.",
       "pinInfo": {
         "isAlertPinned": true,
-        "alertPinnedAt": "2024-12-08T10:00",
+        "alertPinnedAt": "2024-12-08T10:00:45",
         "isPinned": true,
-        "pinnedAt": "",
+        "pinnedAt": "2024-12-08T10:00:45",
         "isTopPinned": false,
         "topPinnedAt": ""
       }
@@ -80,7 +80,7 @@
       "userName": "박지현",
       "shortName": "지현",
       "iconColor": "C70039",
-      "createdAt": "2024-12-08T11:00",
+      "createdAt": "2024-12-08T11:00:55",
       "isOwner": false,
       "isManager": true,
       "likeCounts": 1,
@@ -99,7 +99,7 @@
       "userName": "정우성",
       "shortName": "우성",
       "iconColor": "FFC300",
-      "createdAt": "2024-12-08T12:00",
+      "createdAt": "2024-12-08T12:00:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 2,
@@ -118,7 +118,7 @@
       "userName": "한지민",
       "shortName": "지민",
       "iconColor": "DAF7A6",
-      "createdAt": "2024-12-08T13:00",
+      "createdAt": "2024-12-08T13:00:00",
       "isOwner": false,
       "isManager": true,
       "likeCounts": 3,
@@ -126,9 +126,9 @@
       "content": "내일은 휴무입니다.",
       "pinInfo": {
         "isAlertPinned": true,
-        "alertPinnedAt": "2024-12-08T13:00",
+        "alertPinnedAt": "2024-12-08T13:00:00",
         "isPinned": true,
-        "pinnedAt": "",
+        "pinnedAt": "2024-12-08T13:00:00",
         "isTopPinned": false,
         "topPinnedAt": ""
       }
@@ -137,7 +137,7 @@
       "userName": "김태희",
       "shortName": "태희",
       "iconColor": "581845",
-      "createdAt": "2024-12-08T14:00",
+      "createdAt": "2024-12-08T14:00:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 5,
@@ -156,7 +156,7 @@
       "userName": "이병헌",
       "shortName": "병헌",
       "iconColor": "900C3F",
-      "createdAt": "2024-12-08T15:00",
+      "createdAt": "2024-12-08T15:00:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 4,
@@ -166,7 +166,7 @@
         "isAlertPinned": false,
         "alertPinnedAt": "",
         "isPinned": true,
-        "pinnedAt": "",
+        "pinnedAt": "2024-12-08T15:00:00",
         "isTopPinned": false,
         "topPinnedAt": ""
       }
@@ -175,7 +175,7 @@
       "userName": "송중기",
       "shortName": "중기",
       "iconColor": "FFC300",
-      "createdAt": "2024-12-08T16:00",
+      "createdAt": "2024-12-08T16:00:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 2,
@@ -194,7 +194,7 @@
       "userName": "김소연",
       "shortName": "소연",
       "iconColor": "FF5733",
-      "createdAt": "2024-12-08T17:00",
+      "createdAt": "2024-12-08T17:00:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 1,
@@ -213,7 +213,7 @@
       "userName": "이준기",
       "shortName": "준기",
       "iconColor": "C70039",
-      "createdAt": "2024-12-08T18:00",
+      "createdAt": "2024-12-08T18:00:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 3,
@@ -223,7 +223,7 @@
         "isAlertPinned": false,
         "alertPinnedAt": "",
         "isPinned": true,
-        "pinnedAt": "",
+        "pinnedAt": "2024-12-08T18:00:00",
         "isTopPinned": false,
         "topPinnedAt": ""
       }
@@ -232,7 +232,7 @@
       "userName": "정해인",
       "shortName": "해인",
       "iconColor": "29A881",
-      "createdAt": "2024-12-08T19:00",
+      "createdAt": "2024-12-08T19:00:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 2,
@@ -251,7 +251,7 @@
       "userName": "김유정",
       "shortName": "유정",
       "iconColor": "3F32D5",
-      "createdAt": "2024-12-08T20:00",
+      "createdAt": "2024-12-08T20:00:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 4,
@@ -261,7 +261,7 @@
         "isAlertPinned": false,
         "alertPinnedAt": "",
         "isPinned": true,
-        "pinnedAt": "",
+        "pinnedAt": "2024-12-08T20:00:00",
         "isTopPinned": false,
         "topPinnedAt": ""
       }
@@ -270,7 +270,7 @@
       "userName": "이상윤",
       "shortName": "상윤",
       "iconColor": "9E33C2",
-      "createdAt": "2024-12-08T21:00",
+      "createdAt": "2024-12-08T21:00:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 1,
@@ -289,7 +289,7 @@
       "userName": "박서준",
       "shortName": "서준",
       "iconColor": "FFC300",
-      "createdAt": "2024-12-08T22:00",
+      "createdAt": "2024-12-08T22:00:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 3,
@@ -308,7 +308,7 @@
       "userName": "한지민",
       "shortName": "지민",
       "iconColor": "DAF7A6",
-      "createdAt": "2024-12-08T23:00",
+      "createdAt": "2024-12-08T23:00:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 3,
@@ -318,7 +318,7 @@
         "isAlertPinned": false,
         "alertPinnedAt": "",
         "isPinned": true,
-        "pinnedAt": "",
+        "pinnedAt": "2024-12-08T23:00:00",
         "isTopPinned": false,
         "topPinnedAt": ""
       }
