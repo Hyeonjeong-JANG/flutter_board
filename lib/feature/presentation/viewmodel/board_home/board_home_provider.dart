@@ -6,3 +6,6 @@ final boardHomeProvider =
     NotifierProvider<BoardHomeNotifier, List<BoardHomeViewModel>>(
   () => BoardHomeNotifier(),
 );
+
+// 알림 드롭다운 상태
+final isDropdownOpenProvider = StateProvider<bool>((ref) => false);
