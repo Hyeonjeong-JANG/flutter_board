@@ -35,6 +35,7 @@ class BoardHomePage extends HookConsumerWidget {
                 future: loadBoardContents(),
                 builder: (context, snapshot) {
                   if (!snapshot.hasData) {
+                    print('snapshot.hasData: ${snapshot.hasData}');
                     return Center(child: CircularProgressIndicator());
                   }
                   return Column(

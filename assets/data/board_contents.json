@@ -1,56 +1,151 @@
 {
   "boardContents": [
     {
-      "userName": "김지철",
-      "shortName": "지철",
-      "iconColor": "3F32D5",
-      "createdAt": "2024-12-08T08:16:00",
-      "isOwner": true,
-      "isManager": true,
-      "likeCounts": 2,
-      "replyCounts": 2,
-      "content": "오늘 주방에 파 10kg 주문했습니다. \n눈이 와서 배송이 어려운데 가락시장에서 픽업 가능한 분 픽업 해주세요! 🙏 픽업 해 주시면 감사하겠습니다.",
-      "pinInfo": {
-        "isAlertPinned": true,
-        "alertPinnedAt": "2024-12-08T08:16:00",
-        "isPinned": true,
-        "pinnedAt": "2024-12-08T08:16:00",
-        "isTopPinned": true,
-        "topPinnedAt": "2024-12-08T08:16:00"
-      }
-    },
-    {
       "userName": "김철수",
       "shortName": "철수",
       "iconColor": "9E33C2",
-      "createdAt": "2024-12-08T09:00:17",
+      "createdAt": "2024-01-05T08:00:00",
+      "isOwner": true,
+      "isManager": true,
+      "likeCounts": 5,
+      "replyCounts": 2,
+      "content": "이번 주말 예약이 많습니다. \n조리 준비를 미리 하고 재료 주문도 체크해주세요. \n혹시 변경 사항 있으면 공유 부탁드립니다.",
+      "pinInfo": {
+        "isAlertPinned": true,
+        "alertPinnedAt": "2024-01-05T08:00:00",
+        "isPinned": true,
+        "pinnedAt": "2024-01-05T08:00:00",
+        "isTopPinned": true,
+        "topPinnedAt": "2024-01-05T08:00:00"
+      }
+    },
+    {
+      "userName": "김지철",
+      "shortName": "지철",
+      "iconColor": "3F32D5",
+      "createdAt": "2024-01-10T11:30:00",
       "isOwner": false,
       "isManager": false,
-      "likeCounts": 5,
+      "likeCounts": 3,
       "replyCounts": 1,
-      "content": "눈이 와서 배송이 어려운데 가락시장에서 픽업 가능하신 분 픽업 해주세요! \n이 상황은 매우 긴급하며, 가능한 한 빨리 해결해야 합니다. 날씨가 좋지 않아서 배송이 지연될 수 있으니, 픽업이 가능한 분이 있다면 즉시 연락해 주시기 바랍니다. /n고객의 요청을 충족시키기 위해 최선을 다해야 하며, 이 문제를 해결하는 것이 중요합니다.",
+      "content": "냉장고 안쪽에 있는 채소들 먼저 사용해주세요. \n유통기한 지난 것 없는지 점검 부탁드립니다. \n위생관리 철저히 해주세요!",
       "pinInfo": {
         "isAlertPinned": false,
         "alertPinnedAt": "",
-        "isPinned": true,
-        "pinnedAt": "2024-12-08T09:00:17",
-        "isTopPinned": true,
-        "topPinnedAt": "2024-12-08T09:00:17"
+        "isPinned": false,
+        "pinnedAt": "",
+        "isTopPinned": false,
+        "topPinnedAt": ""
       }
     },
     {
       "userName": "최지영",
       "shortName": "지영",
       "iconColor": "29A881",
-      "createdAt": "2024-12-08T09:30:30",
+      "createdAt": "2024-01-15T14:45:00",
       "isOwner": false,
-      "isManager": false,
-      "likeCounts": 3,
-      "replyCounts": 0,
-      "content": "동파 방지를 위해 퇴근 전 수도를 틀고 가주세요! \n아주 조금 물이 흐르는 정도(졸졸졸)로 틀고 퇴근해 주시면 내일 근무자가 편합니다.\n매장 근처에 사는 분 중간에 확인 함 해주시면 감사하겠습니다. ",
+      "isManager": true,
+      "likeCounts": 6,
+      "replyCounts": 3,
+      "content": "새로운 파스타 메뉴 개발 중입니다. 직원 의견 받아 메뉴 보완하려 하니 시식 가능하신 분들은 피드백 부탁드립니다!",
       "pinInfo": {
         "isAlertPinned": true,
-        "alertPinnedAt": "2024-12-08T09:30:30",
+        "alertPinnedAt": "2024-01-15T14:45:00",
+        "isPinned": true,
+        "pinnedAt": "2024-01-15T14:45:00",
+        "isTopPinned": true,
+        "topPinnedAt": "2024-01-15T14:45:00"
+      }
+    },
+    {
+      "userName": "이민호",
+      "shortName": "민호",
+      "iconColor": "FF5733",
+      "createdAt": "2024-02-01T10:20:00",
+      "isOwner": false,
+      "isManager": false,
+      "likeCounts": 2,
+      "replyCounts": 1,
+      "content": "최근 고객 클레임 중 음식이 늦게 나온다는 의견이 많습니다. 서비스 개선 방안 논의해야 하니 의견 남겨주세요.",
+      "pinInfo": {
+        "isAlertPinned": false,
+        "alertPinnedAt": "",
+        "isPinned": true,
+        "pinnedAt": "2024-02-01T10:20:00",
+        "isTopPinned": true,
+        "topPinnedAt": "2024-02-01T10:20:00"
+      }
+    },
+    {
+      "userName": "김철수",
+      "shortName": "철수",
+      "iconColor": "9E33C2",
+      "createdAt": "2024-02-05T09:00:00",
+      "isOwner": true,
+      "isManager": true,
+      "likeCounts": 4,
+      "replyCounts": 2,
+      "content": "다음 주부터 주방 위생 점검이 있을 예정입니다. 청소 일정과 담당 구역 확인 후 철저히 준비 부탁드립니다.",
+      "pinInfo": {
+        "isAlertPinned": true,
+        "alertPinnedAt": "2024-02-05T09:00:00",
+        "isPinned": true,
+        "pinnedAt": "2024-02-05T09:00:00",
+        "isTopPinned": true,
+        "topPinnedAt": "2024-02-05T09:00:00"
+      }
+    },
+    {
+      "userName": "김지철",
+      "shortName": "지철",
+      "iconColor": "3F32D5",
+      "createdAt": "2024-01-10T08:30:00",
+      "isOwner": true,
+      "isManager": true,
+      "likeCounts": 3,
+      "replyCounts": 1,
+      "content": "오늘 아침 식자재 검수를 완료했습니다. \n신선도 체크 필수이며, 유통기한도 확인해주세요. \n특별히 채소 상태가 안 좋을 수 있으니 확인 부탁드립니다.",
+      "pinInfo": {
+        "isAlertPinned": true,
+        "alertPinnedAt": "2024-01-10T08:30:00",
+        "isPinned": true,
+        "pinnedAt": "2024-01-10T08:30:00",
+        "isTopPinned": true,
+        "topPinnedAt": "2024-01-10T08:30:00"
+      }
+    },
+    {
+      "userName": "김철수",
+      "shortName": "철수",
+      "iconColor": "9E33C2",
+      "createdAt": "2024-01-12T14:00:00",
+      "isOwner": false,
+      "isManager": false,
+      "likeCounts": 4,
+      "replyCounts": 2,
+      "content": "이번 주 금요일 저녁 단체 예약이 있습니다. \n손님이 20명이라 미리 좌석 배치 준비 부탁드립니다. \n주문 예상 메뉴도 확인 후 미리 재료 준비하세요.",
+      "pinInfo": {
+        "isAlertPinned": false,
+        "alertPinnedAt": "",
+        "isPinned": false,
+        "pinnedAt": "",
+        "isTopPinned": false,
+        "topPinnedAt": ""
+      }
+    },
+    {
+      "userName": "최지영",
+      "shortName": "지영",
+      "iconColor": "29A881",
+      "createdAt": "2024-02-02T18:45:00",
+      "isOwner": false,
+      "isManager": false,
+      "likeCounts": 5,
+      "replyCounts": 3,
+      "content": "냉장고 온도를 다시 확인해주세요. \n낮 시간 동안 문이 열린 상태로 유지되는 일이 있었습니다. \n식재료 신선도에 영향을 줄 수 있으니 주의 바랍니다.",
+      "pinInfo": {
+        "isAlertPinned": false,
+        "alertPinnedAt": "",
         "isPinned": false,
         "pinnedAt": "",
         "isTopPinned": false,
@@ -61,264 +156,17 @@
       "userName": "이민호",
       "shortName": "민호",
       "iconColor": "FF5733",
-      "createdAt": "2024-12-08T10:00:45",
+      "createdAt": "2024-02-10T12:20:00",
       "isOwner": false,
       "isManager": false,
-      "likeCounts": 4,
+      "likeCounts": 2,
       "replyCounts": 1,
-      "content": "내일 회의는 3시에 시작합니다.",
+      "content": "새로운 점심 메뉴 시식을 진행합니다. \n오늘 오후 3시에 주방에서 시식회를 하니 모두 참여해주세요. \n피드백 후 정식 메뉴로 추가할지 결정할 예정입니다.",
       "pinInfo": {
         "isAlertPinned": true,
-        "alertPinnedAt": "2024-12-08T10:00:45",
-        "isPinned": true,
-        "pinnedAt": "2024-12-08T10:00:45",
-        "isTopPinned": false,
-        "topPinnedAt": ""
-      }
-    },
-    {
-      "userName": "박지현",
-      "shortName": "지현",
-      "iconColor": "C70039",
-      "createdAt": "2024-12-08T11:00:55",
-      "isOwner": false,
-      "isManager": true,
-      "likeCounts": 1,
-      "replyCounts": 0,
-      "content": "점심시간에 회의가 있습니다.",
-      "pinInfo": {
-        "isAlertPinned": false,
-        "alertPinnedAt": "",
+        "alertPinnedAt": "2024-02-10T12:20:00",
         "isPinned": false,
         "pinnedAt": "",
-        "isTopPinned": false,
-        "topPinnedAt": ""
-      }
-    },
-    {
-      "userName": "정우성",
-      "shortName": "우성",
-      "iconColor": "FFC300",
-      "createdAt": "2024-12-08T12:00:00",
-      "isOwner": false,
-      "isManager": false,
-      "likeCounts": 2,
-      "replyCounts": 1,
-      "content": "새로운 프로젝트에 대한 아이디어를 공유해주세요.",
-      "pinInfo": {
-        "isAlertPinned": false,
-        "alertPinnedAt": "",
-        "isPinned": false,
-        "pinnedAt": "",
-        "isTopPinned": false,
-        "topPinnedAt": ""
-      }
-    },
-    {
-      "userName": "한지민",
-      "shortName": "지민",
-      "iconColor": "DAF7A6",
-      "createdAt": "2024-12-08T13:00:00",
-      "isOwner": false,
-      "isManager": true,
-      "likeCounts": 3,
-      "replyCounts": 2,
-      "content": "내일은 휴무입니다.",
-      "pinInfo": {
-        "isAlertPinned": true,
-        "alertPinnedAt": "2024-12-08T13:00:00",
-        "isPinned": true,
-        "pinnedAt": "2024-12-08T13:00:00",
-        "isTopPinned": false,
-        "topPinnedAt": ""
-      }
-    },
-    {
-      "userName": "김태희",
-      "shortName": "태희",
-      "iconColor": "581845",
-      "createdAt": "2024-12-08T14:00:00",
-      "isOwner": false,
-      "isManager": false,
-      "likeCounts": 5,
-      "replyCounts": 3,
-      "content": "오늘 저녁에 팀 회식이 있습니다.",
-      "pinInfo": {
-        "isAlertPinned": false,
-        "alertPinnedAt": "",
-        "isPinned": false,
-        "pinnedAt": "",
-        "isTopPinned": false,
-        "topPinnedAt": ""
-      }
-    },
-    {
-      "userName": "이병헌",
-      "shortName": "병헌",
-      "iconColor": "900C3F",
-      "createdAt": "2024-12-08T15:00:00",
-      "isOwner": false,
-      "isManager": false,
-      "likeCounts": 4,
-      "replyCounts": 1,
-      "content": "다음 주 월요일에 중요한 발표가 있습니다.",
-      "pinInfo": {
-        "isAlertPinned": false,
-        "alertPinnedAt": "",
-        "isPinned": true,
-        "pinnedAt": "2024-12-08T15:00:00",
-        "isTopPinned": false,
-        "topPinnedAt": ""
-      }
-    },
-    {
-      "userName": "송중기",
-      "shortName": "중기",
-      "iconColor": "FFC300",
-      "createdAt": "2024-12-08T16:00:00",
-      "isOwner": false,
-      "isManager": false,
-      "likeCounts": 2,
-      "replyCounts": 0,
-      "content": "이번 주 금요일에 마감입니다.",
-      "pinInfo": {
-        "isAlertPinned": false,
-        "alertPinnedAt": "",
-        "isPinned": false,
-        "pinnedAt": "",
-        "isTopPinned": false,
-        "topPinnedAt": ""
-      }
-    },
-    {
-      "userName": "김소연",
-      "shortName": "소연",
-      "iconColor": "FF5733",
-      "createdAt": "2024-12-08T17:00:00",
-      "isOwner": false,
-      "isManager": false,
-      "likeCounts": 1,
-      "replyCounts": 1,
-      "content": "팀원들 모두 참석해주세요.",
-      "pinInfo": {
-        "isAlertPinned": false,
-        "alertPinnedAt": "",
-        "isPinned": false,
-        "pinnedAt": "",
-        "isTopPinned": false,
-        "topPinnedAt": ""
-      }
-    },
-    {
-      "userName": "이준기",
-      "shortName": "준기",
-      "iconColor": "C70039",
-      "createdAt": "2024-12-08T18:00:00",
-      "isOwner": false,
-      "isManager": false,
-      "likeCounts": 3,
-      "replyCounts": 2,
-      "content": "다음 주에 중요한 미팅이 있습니다.",
-      "pinInfo": {
-        "isAlertPinned": false,
-        "alertPinnedAt": "",
-        "isPinned": true,
-        "pinnedAt": "2024-12-08T18:00:00",
-        "isTopPinned": false,
-        "topPinnedAt": ""
-      }
-    },
-    {
-      "userName": "정해인",
-      "shortName": "해인",
-      "iconColor": "29A881",
-      "createdAt": "2024-12-08T19:00:00",
-      "isOwner": false,
-      "isManager": false,
-      "likeCounts": 2,
-      "replyCounts": 0,
-      "content": "이번 주 금요일에 발표가 있습니다.",
-      "pinInfo": {
-        "isAlertPinned": false,
-        "alertPinnedAt": "",
-        "isPinned": false,
-        "pinnedAt": "",
-        "isTopPinned": false,
-        "topPinnedAt": ""
-      }
-    },
-    {
-      "userName": "김유정",
-      "shortName": "유정",
-      "iconColor": "3F32D5",
-      "createdAt": "2024-12-08T20:00:00",
-      "isOwner": false,
-      "isManager": false,
-      "likeCounts": 4,
-      "replyCounts": 1,
-      "content": "내일은 팀 회의가 있습니다.",
-      "pinInfo": {
-        "isAlertPinned": false,
-        "alertPinnedAt": "",
-        "isPinned": true,
-        "pinnedAt": "2024-12-08T20:00:00",
-        "isTopPinned": false,
-        "topPinnedAt": ""
-      }
-    },
-    {
-      "userName": "이상윤",
-      "shortName": "상윤",
-      "iconColor": "9E33C2",
-      "createdAt": "2024-12-08T21:00:00",
-      "isOwner": false,
-      "isManager": false,
-      "likeCounts": 1,
-      "replyCounts": 0,
-      "content": "이번 주에 중요한 일정이 있습니다.",
-      "pinInfo": {
-        "isAlertPinned": false,
-        "alertPinnedAt": "",
-        "isPinned": false,
-        "pinnedAt": "",
-        "isTopPinned": false,
-        "topPinnedAt": ""
-      }
-    },
-    {
-      "userName": "박서준",
-      "shortName": "서준",
-      "iconColor": "FFC300",
-      "createdAt": "2024-12-08T22:00:00",
-      "isOwner": false,
-      "isManager": false,
-      "likeCounts": 3,
-      "replyCounts": 2,
-      "content": "팀원들 모두 참석해주세요.",
-      "pinInfo": {
-        "isAlertPinned": false,
-        "alertPinnedAt": "",
-        "isPinned": false,
-        "pinnedAt": "",
-        "isTopPinned": false,
-        "topPinnedAt": ""
-      }
-    },
-    {
-      "userName": "한지민",
-      "shortName": "지민",
-      "iconColor": "DAF7A6",
-      "createdAt": "2024-12-08T23:00:00",
-      "isOwner": false,
-      "isManager": false,
-      "likeCounts": 3,
-      "replyCounts": 2,
-      "content": "내일은 휴무입니다.",
-      "pinInfo": {
-        "isAlertPinned": false,
-        "alertPinnedAt": "",
-        "isPinned": true,
-        "pinnedAt": "2024-12-08T23:00:00",
         "isTopPinned": false,
         "topPinnedAt": ""
       }
