@@ -7,6 +7,7 @@ import 'package:board/feature/presentation/widgets/floating_gradient_button_.dar
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 // 더미 데이터 로드
 Future<List<BoardHomeViewModel>> loadBoardContents() async {
@@ -17,24 +18,11 @@ Future<List<BoardHomeViewModel>> loadBoardContents() async {
       jsonData['boardContents'].map((x) => BoardHomeViewModel.fromJson(x)));
 }
 
-class BoardHomePage extends StatefulWidget {
+class BoardHomePage extends HookConsumerWidget {
   const BoardHomePage({super.key});
 
   @override
-  State<BoardHomePage> createState() => _BoardHomePageState();
-}
-
-class _BoardHomePageState extends State<BoardHomePage> {
-  late Future<List<BoardHomeViewModel>> boardContents;
-
-  @override
-  void initState() {
-    super.initState();
-    boardContents = loadBoardContents();
-  }
-
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -44,9 +32,8 @@ class _BoardHomePageState extends State<BoardHomePage> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: AppSizes.gapL),
               child: FutureBuilder<List<BoardHomeViewModel>>(
-                future: boardContents,
-                builder: (context,
-                    AsyncSnapshot<List<BoardHomeViewModel>> snapshot) {
+                future: loadBoardContents(),
+                builder: (context, snapshot) {
                   if (!snapshot.hasData) {
                     return Center(child: CircularProgressIndicator());
                   }
@@ -54,7 +41,7 @@ class _BoardHomePageState extends State<BoardHomePage> {
                     children: [
                       PinnedContentsDropdownList(),
                       SizedBox(height: AppSizes.spacingL),
-                      BoardList(contents: snapshot.data!),
+                      BoardList(),
                     ],
                   );
                 },

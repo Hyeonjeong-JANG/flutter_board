@@ -7,7 +7,7 @@ class BoardHomeViewModel {
   final String userName;
   final String shortName;
   final String iconColor;
-  final String date;
+  final String createdAt;
   final bool isOwner;
   final bool isManager;
   final int likeCounts;
@@ -20,7 +20,7 @@ class BoardHomeViewModel {
     required this.shortName,
     required this.iconColor,
     required this.content,
-    required this.date,
+    required this.createdAt,
     required this.isOwner,
     required this.isManager,
     required this.likeCounts,
@@ -35,19 +35,19 @@ class BoardHomeViewModel {
 @JsonSerializable()
 class PinInfo {
   final bool isAlertPinned;
-  final String alertPinnedDate;
+  final String alertPinnedAt;
   final bool isPinned;
-  final String pinDate;
+  final String pinnedAt;
   final bool isTopPinned;
-  final String topPinnedDate;
+  final String topPinnedAt;
 
   PinInfo({
     required this.isAlertPinned,
-    required this.alertPinnedDate,
+    required this.alertPinnedAt,
     required this.isPinned,
-    required this.pinDate,
+    required this.pinnedAt,
     required this.isTopPinned,
-    required this.topPinnedDate,
+    required this.topPinnedAt,
   });
 
   factory PinInfo.fromJson(Map<String, dynamic> json) =>

@@ -3,9 +3,10 @@ import 'package:board/core/constants/size.dart';
 import 'package:board/feature/presentation/viewmodel/board_home/board_home_viewmodel.dart';
 import 'package:board/feature/presentation/widgets/board_home/content_bottom_button.dart';
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 // 게시글
-class ContentBox extends StatelessWidget {
+class ContentBox extends HookConsumerWidget {
   final BoardHomeViewModel content;
   final int maxLines;
   const ContentBox({
@@ -15,7 +16,7 @@ class ContentBox extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Container(
       padding: EdgeInsets.all(AppSizes.spacingL),
       decoration: BoxDecoration(
@@ -74,7 +75,7 @@ class ContentBox extends StatelessWidget {
                                 ],
                               ),
                               Text(
-                                content.date,
+                                content.createdAt,
                                 style: TextStyle(
                                   color: AppColor.grey,
                                   fontSize: 12.0,

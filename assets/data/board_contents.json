@@ -4,7 +4,7 @@
       "userName": "김지철",
       "shortName": "지철",
       "iconColor": "3F32D5",
-      "date": "2024년 12월 08일 오전 08:16",
+      "createdAt": "2024년 12월 08일 오전 08:16",
       "isOwner": true,
       "isManager": true,
       "likeCounts": 2,
@@ -12,18 +12,18 @@
       "content": "오늘 주방에 파 10kg 주문했습니다. \n눈이 와서 배송이 어려운데 가락시장에서 픽업 가능한 분 픽업 해주세요! 🙏 픽업 해 주시면 감사하겠습니다.",
       "pinInfo": {
         "isAlertPinned": true,
-        "alertPinnedDate": "2024년 12월 08일 오전 08:16",
+        "alertPinnedAt": "2024년 12월 08일 오전 08:16",
         "isPinned": true,
-        "pinDate": "2024년 12월 08일 오전 08:16",
+        "pinnedAt": "2024년 12월 08일 오전 08:16",
         "isTopPinned": true,
-        "topPinnedDate": "2024년 12월 08일 오전 08:16"
+        "topPinnedAt": "2024년 12월 08일 오전 08:16"
       }
     },
     {
       "userName": "김철수",
       "shortName": "철수",
       "iconColor": "9E33C2",
-      "date": "2024년 12월 08일 오전 09:00",
+      "createdAt": "2024년 12월 08일 오전 09:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 5,
@@ -31,18 +31,18 @@
       "content": "눈이 와서 배송이 어려운데 가락시장에서 픽업 가능하신 분 픽업 해주세요! \n이 상황은 매우 긴급하며, 가능한 한 빨리 해결해야 합니다. 날씨가 좋지 않아서 배송이 지연될 수 있으니, 픽업이 가능한 분이 있다면 즉시 연락해 주시기 바랍니다. /n고객의 요청을 충족시키기 위해 최선을 다해야 하며, 이 문제를 해결하는 것이 중요합니다.",
       "pinInfo": {
         "isAlertPinned": false,
-        "alertPinnedDate": "",
+        "alertPinnedAt": "",
         "isPinned": true,
-        "pinDate": "2024년 12월 08일 오전 09:00",
+        "pinnedAt": "2024년 12월 08일 오전 09:00",
         "isTopPinned": true,
-        "topPinnedDate": "2024년 12월 09일 오전 09:00"
+        "topPinnedAt": "2024년 12월 09일 오전 09:00"
       }
     },
     {
       "userName": "최지영",
       "shortName": "지영",
       "iconColor": "29A881",
-      "date": "2024년 12월 08일 오전 09:30",
+      "createdAt": "2024년 12월 08일 오전 09:30",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 3,
@@ -50,18 +50,18 @@
       "content": "동파 방지를 위해 퇴근 전 수도를 틀고 가주세요! \n아주 조금 물이 흐르는 정도(졸졸졸)로 틀고 퇴근해 주시면 내일 근무자가 편합니다.\n매장 근처에 사는 분 중간에 확인 함 해주시면 감사하겠습니다. ",
       "pinInfo": {
         "isAlertPinned": true,
-        "alertPinnedDate": "2024년 12월 08일 오전 09:30",
+        "alertPinnedAt": "2024년 12월 08일 오전 09:30",
         "isPinned": false,
-        "pinDate": "",
+        "pinnedAt": "",
         "isTopPinned": false,
-        "topPinnedDate": ""
+        "topPinnedAt": ""
       }
     },
     {
       "userName": "이민호",
       "shortName": "민호",
       "iconColor": "FF5733",
-      "date": "2024년 12월 08일 오전 10:00",
+      "createdAt": "2024년 12월 08일 오전 10:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 4,
@@ -69,18 +69,18 @@
       "content": "내일 회의는 3시에 시작합니다.",
       "pinInfo": {
         "isAlertPinned": true,
-        "alertPinnedDate": "2024년 12월 08일 오전 10:00",
+        "alertPinnedAt": "2024년 12월 08일 오전 10:00",
         "isPinned": true,
-        "pinDate": "",
+        "pinnedAt": "",
         "isTopPinned": false,
-        "topPinnedDate": ""
+        "topPinnedAt": ""
       }
     },
     {
       "userName": "박지현",
       "shortName": "지현",
       "iconColor": "C70039",
-      "date": "2024년 12월 08일 오전 11:00",
+      "createdAt": "2024년 12월 08일 오전 11:00",
       "isOwner": false,
       "isManager": true,
       "likeCounts": 1,
@@ -88,18 +88,18 @@
       "content": "점심시간에 회의가 있습니다.",
       "pinInfo": {
         "isAlertPinned": false,
-        "alertPinnedDate": "",
+        "alertPinnedAt": "",
         "isPinned": false,
-        "pinDate": "",
+        "pinnedAt": "",
         "isTopPinned": false,
-        "topPinnedDate": ""
+        "topPinnedAt": ""
       }
     },
     {
       "userName": "정우성",
       "shortName": "우성",
       "iconColor": "FFC300",
-      "date": "2024년 12월 08일 오후 12:00",
+      "createdAt": "2024년 12월 08일 오후 12:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 2,
@@ -107,18 +107,18 @@
       "content": "새로운 프로젝트에 대한 아이디어를 공유해주세요.",
       "pinInfo": {
         "isAlertPinned": false,
-        "alertPinnedDate": "",
+        "alertPinnedAt": "",
         "isPinned": false,
-        "pinDate": "",
+        "pinnedAt": "",
         "isTopPinned": false,
-        "topPinnedDate": ""
+        "topPinnedAt": ""
       }
     },
     {
       "userName": "한지민",
       "shortName": "지민",
       "iconColor": "DAF7A6",
-      "date": "2024년 12월 08일 오후 1:00",
+      "createdAt": "2024년 12월 08일 오후 1:00",
       "isOwner": false,
       "isManager": true,
       "likeCounts": 3,
@@ -126,18 +126,18 @@
       "content": "내일은 휴무입니다.",
       "pinInfo": {
         "isAlertPinned": true,
-        "alertPinnedDate": "2024년 12월 08일 오후 1:00",
+        "alertPinnedAt": "2024년 12월 08일 오후 1:00",
         "isPinned": true,
-        "pinDate": "",
+        "pinnedAt": "",
         "isTopPinned": false,
-        "topPinnedDate": ""
+        "topPinnedAt": ""
       }
     },
     {
       "userName": "김태희",
       "shortName": "태희",
       "iconColor": "581845",
-      "date": "2024년 12월 08일 오후 2:00",
+      "createdAt": "2024년 12월 08일 오후 2:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 5,
@@ -145,18 +145,18 @@
       "content": "오늘 저녁에 팀 회식이 있습니다.",
       "pinInfo": {
         "isAlertPinned": false,
-        "alertPinnedDate": "",
+        "alertPinnedAt": "",
         "isPinned": false,
-        "pinDate": "",
+        "pinnedAt": "",
         "isTopPinned": false,
-        "topPinnedDate": ""
+        "topPinnedAt": ""
       }
     },
     {
       "userName": "이병헌",
       "shortName": "병헌",
       "iconColor": "900C3F",
-      "date": "2024년 12월 08일 오후 3:00",
+      "createdAt": "2024년 12월 08일 오후 3:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 4,
@@ -164,18 +164,18 @@
       "content": "다음 주 월요일에 중요한 발표가 있습니다.",
       "pinInfo": {
         "isAlertPinned": false,
-        "alertPinnedDate": "",
+        "alertPinnedAt": "",
         "isPinned": true,
-        "pinDate": "",
+        "pinnedAt": "",
         "isTopPinned": false,
-        "topPinnedDate": ""
+        "topPinnedAt": ""
       }
     },
     {
       "userName": "송중기",
       "shortName": "중기",
       "iconColor": "FFC300",
-      "date": "2024년 12월 08일 오후 4:00",
+      "createdAt": "2024년 12월 08일 오후 4:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 2,
@@ -183,18 +183,18 @@
       "content": "이번 주 금요일에 마감입니다.",
       "pinInfo": {
         "isAlertPinned": false,
-        "alertPinnedDate": "",
+        "alertPinnedAt": "",
         "isPinned": false,
-        "pinDate": "",
+        "pinnedAt": "",
         "isTopPinned": false,
-        "topPinnedDate": ""
+        "topPinnedAt": ""
       }
     },
     {
       "userName": "김소연",
       "shortName": "소연",
       "iconColor": "FF5733",
-      "date": "2024년 12월 08일 오후 5:00",
+      "createdAt": "2024년 12월 08일 오후 5:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 1,
@@ -202,18 +202,18 @@
       "content": "팀원들 모두 참석해주세요.",
       "pinInfo": {
         "isAlertPinned": false,
-        "alertPinnedDate": "",
+        "alertPinnedAt": "",
         "isPinned": false,
-        "pinDate": "",
+        "pinnedAt": "",
         "isTopPinned": false,
-        "topPinnedDate": ""
+        "topPinnedAt": ""
       }
     },
     {
       "userName": "이준기",
       "shortName": "준기",
       "iconColor": "C70039",
-      "date": "2024년 12월 08일 오후 6:00",
+      "createdAt": "2024년 12월 08일 오후 6:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 3,
@@ -221,18 +221,18 @@
       "content": "다음 주에 중요한 미팅이 있습니다.",
       "pinInfo": {
         "isAlertPinned": false,
-        "alertPinnedDate": "",
+        "alertPinnedAt": "",
         "isPinned": true,
-        "pinDate": "",
+        "pinnedAt": "",
         "isTopPinned": false,
-        "topPinnedDate": ""
+        "topPinnedAt": ""
       }
     },
     {
       "userName": "정해인",
       "shortName": "해인",
       "iconColor": "29A881",
-      "date": "2024년 12월 08일 오후 7:00",
+      "createdAt": "2024년 12월 08일 오후 7:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 2,
@@ -240,18 +240,18 @@
       "content": "이번 주 금요일에 발표가 있습니다.",
       "pinInfo": {
         "isAlertPinned": false,
-        "alertPinnedDate": "",
+        "alertPinnedAt": "",
         "isPinned": false,
-        "pinDate": "",
+        "pinnedAt": "",
         "isTopPinned": false,
-        "topPinnedDate": ""
+        "topPinnedAt": ""
       }
     },
     {
       "userName": "김유정",
       "shortName": "유정",
       "iconColor": "3F32D5",
-      "date": "2024년 12월 08일 오후 8:00",
+      "createdAt": "2024년 12월 08일 오후 8:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 4,
@@ -259,18 +259,18 @@
       "content": "내일은 팀 회의가 있습니다.",
       "pinInfo": {
         "isAlertPinned": false,
-        "alertPinnedDate": "",
+        "alertPinnedAt": "",
         "isPinned": true,
-        "pinDate": "",
+        "pinnedAt": "",
         "isTopPinned": false,
-        "topPinnedDate": ""
+        "topPinnedAt": ""
       }
     },
     {
       "userName": "이상윤",
       "shortName": "상윤",
       "iconColor": "9E33C2",
-      "date": "2024년 12월 08일 오후 9:00",
+      "createdAt": "2024년 12월 08일 오후 9:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 1,
@@ -278,18 +278,18 @@
       "content": "이번 주에 중요한 일정이 있습니다.",
       "pinInfo": {
         "isAlertPinned": false,
-        "alertPinnedDate": "",
+        "alertPinnedAt": "",
         "isPinned": false,
-        "pinDate": "",
+        "pinnedAt": "",
         "isTopPinned": false,
-        "topPinnedDate": ""
+        "topPinnedAt": ""
       }
     },
     {
       "userName": "박서준",
       "shortName": "서준",
       "iconColor": "FFC300",
-      "date": "2024년 12월 08일 오후 10:00",
+      "createdAt": "2024년 12월 08일 오후 10:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 3,
@@ -297,18 +297,18 @@
       "content": "팀원들 모두 참석해주세요.",
       "pinInfo": {
         "isAlertPinned": false,
-        "alertPinnedDate": "",
+        "alertPinnedAt": "",
         "isPinned": false,
-        "pinDate": "",
+        "pinnedAt": "",
         "isTopPinned": false,
-        "topPinnedDate": ""
+        "topPinnedAt": ""
       }
     },
     {
       "userName": "한지민",
       "shortName": "지민",
       "iconColor": "DAF7A6",
-      "date": "2024년 12월 08일 오후 11:00",
+      "createdAt": "2024년 12월 08일 오후 11:00",
       "isOwner": false,
       "isManager": false,
       "likeCounts": 3,
@@ -316,11 +316,11 @@
       "content": "내일은 휴무입니다.",
       "pinInfo": {
         "isAlertPinned": false,
-        "alertPinnedDate": "",
+        "alertPinnedAt": "",
         "isPinned": true,
-        "pinDate": "",
+        "pinnedAt": "",
         "isTopPinned": false,
-        "topPinnedDate": ""
+        "topPinnedAt": ""
       }
     }
   ]

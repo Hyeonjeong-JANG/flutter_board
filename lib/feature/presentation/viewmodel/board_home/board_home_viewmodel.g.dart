@@ -12,7 +12,7 @@ BoardHomeViewModel _$BoardHomeViewModelFromJson(Map<String, dynamic> json) =>
       shortName: json['shortName'] as String,
       iconColor: json['iconColor'] as String,
       content: json['content'] as String,
-      date: json['date'] as String,
+      createdAt: json['createdAt'] as String,
       isOwner: json['isOwner'] as bool,
       isManager: json['isManager'] as bool,
       likeCounts: (json['likeCounts'] as num).toInt(),
@@ -25,7 +25,7 @@ Map<String, dynamic> _$BoardHomeViewModelToJson(BoardHomeViewModel instance) =>
       'userName': instance.userName,
       'shortName': instance.shortName,
       'iconColor': instance.iconColor,
-      'date': instance.date,
+      'createdAt': instance.createdAt,
       'isOwner': instance.isOwner,
       'isManager': instance.isManager,
       'likeCounts': instance.likeCounts,
@@ -36,18 +36,18 @@ Map<String, dynamic> _$BoardHomeViewModelToJson(BoardHomeViewModel instance) =>
 
 PinInfo _$PinInfoFromJson(Map<String, dynamic> json) => PinInfo(
       isAlertPinned: json['isAlertPinned'] as bool,
-      alertPinnedDate: json['alertPinnedDate'] as String,
+      alertPinnedAt: json['alertPinnedAt'] as String,
       isPinned: json['isPinned'] as bool,
-      pinDate: json['pinDate'] as String,
+      pinnedAt: json['pinnedAt'] as String,
       isTopPinned: json['isTopPinned'] as bool,
-      topPinnedDate: json['topPinnedDate'] as String,
+      topPinnedAt: json['topPinnedAt'] as String,
     );
 
 Map<String, dynamic> _$PinInfoToJson(PinInfo instance) => <String, dynamic>{
       'isAlertPinned': instance.isAlertPinned,
-      'alertPinnedDate': instance.alertPinnedDate,
+      'alertPinnedAt': instance.alertPinnedAt,
       'isPinned': instance.isPinned,
-      'pinDate': instance.pinDate,
+      'pinnedAt': instance.pinnedAt,
       'isTopPinned': instance.isTopPinned,
-      'topPinnedDate': instance.topPinnedDate,
+      'topPinnedAt': instance.topPinnedAt,
     };
