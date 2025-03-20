@@ -1,4 +1,5 @@
-import 'package:board/core/widgets/app_bar_with_back_button.dart';
+import 'package:board/core/constants/color.dart';
+import 'package:board/core/layouts/default_layout.dart';
 import 'package:flutter/material.dart';
 
 class BoardWritePage extends StatelessWidget {
@@ -6,13 +7,22 @@ class BoardWritePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBarWithBackButton(
-        title: '게시글 작성',
-      ),
-      body: Column(
+    return DefaultLayout(
+      title: '게시글 작성',
+      child: Column(
         children: [
-          Text('게시글 작성'),
+          TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(
+                borderSide: BorderSide(
+                  color: AppColor.expensesColor,
+                ),
+              ),
+              hintText: '게시글 작성칸',
+            ),
+          ),
+          Text('사진등록칸'),
+          FloatingActionButton(onPressed: () {}),
         ],
       ),
     );
