@@ -38,9 +38,9 @@ class BoardHomePage extends HookConsumerWidget {
                 ],
               ),
           FloatingGradientButton(
-            title: '게시글 작성하기',
+            title: '공지 작성하기',
             onTap: () {
-              context.go('/boards/write');
+              context.go('/boards/write', extra: {'isEditing': false});
             },
           ),
         ],
