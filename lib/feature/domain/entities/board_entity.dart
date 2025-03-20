@@ -5,6 +5,7 @@ part 'board_entity.g.dart';
 @JsonSerializable()
 class BoardEntity {
   final String id;
+  final String userId;
   final String userName;
   final String shortName;
   final String iconColor;
@@ -16,11 +17,12 @@ class BoardEntity {
   final Set<String>? likeUserIds;
   final int replyCounts;
   final String content;
-  final PinInfo? pinInfo;
-  final List<Reply>? replies;
+  final PinInfo pinInfo;
+  final List<Reply> replies;
 
   BoardEntity({
     required this.id,
+    required this.userId,
     required this.userName,
     required this.shortName,
     required this.iconColor,
@@ -33,42 +35,43 @@ class BoardEntity {
     required this.replyCounts,
     required this.content,
     required this.pinInfo,
-    this.replies,
+    required this.replies,
   });
 
   factory BoardEntity.fromJson(Map<String, dynamic> json) =>
       _$BoardEntityFromJson(json);
 
-  // 좋아요 수를 토글하는 메서드
-  BoardEntity toggleLike(String userId) {
-    final newLikedUserIds = Set<String>.from(likeUserIds ?? []);
-    int newLikeCounts = likeCounts;
+  // // 좋아요 수를 토글하는 메서드
+  // BoardEntity toggleLike(String userId) {
+  //   final newLikedUserIds = Set<String>.from(likeUserIds ?? []);
+  //   int newLikeCounts = likeCounts;
 
-    if (newLikedUserIds.contains(userId)) {
-      newLikedUserIds.remove(userId);
-      newLikeCounts--;
-    } else {
-      newLikedUserIds.add(userId);
-      newLikeCounts++;
-    }
+  //   if (newLikedUserIds.contains(userId)) {
+  //     newLikedUserIds.remove(userId);
+  //     newLikeCounts--;
+  //   } else {
+  //     newLikedUserIds.add(userId);
+  //     newLikeCounts++;
+  //   }
 
-    return BoardEntity(
-      id: id,
-      userName: userName,
-      shortName: shortName,
-      iconColor: iconColor,
-      createdAt: createdAt,
-      updatedAt: DateTime.now().toIso8601String(),
-      isOwner: isOwner,
-      isManager: isManager,
-      likeCounts: newLikeCounts,
-      likeUserIds: newLikedUserIds,
-      replyCounts: replyCounts,
-      content: content,
-      pinInfo: pinInfo,
-      replies: replies,
-    );
-  }
+  //   return BoardEntity(
+  //     id: id,
+  //     userId: userId,
+  //     userName: userName,
+  //     shortName: shortName,
+  //     iconColor: iconColor,
+  //     createdAt: createdAt,
+  //     updatedAt: DateTime.now().toIso8601String(),
+  //     isOwner: isOwner,
+  //     isManager: isManager,
+  //     likeCounts: newLikeCounts,
+  //     likeUserIds: newLikedUserIds,
+  //     replyCounts: replyCounts,
+  //     content: content,
+  //     pinInfo: pinInfo,
+  //     replies: replies,
+  //   );
+  // }
 }
 
 @JsonSerializable()
@@ -81,11 +84,11 @@ class PinInfo {
   final String? topPinnedAt;
 
   PinInfo({
-    required this.isAlertPinned,
+    this.isAlertPinned = false,
     this.alertPinnedAt,
-    required this.isPinned,
+    this.isPinned = false,
     this.pinnedAt,
-    required this.isTopPinned,
+    this.isTopPinned = false,
     this.topPinnedAt,
   });
 

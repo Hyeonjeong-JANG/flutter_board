@@ -8,6 +8,7 @@ part of 'board_entity.dart';
 
 BoardEntity _$BoardEntityFromJson(Map<String, dynamic> json) => BoardEntity(
       id: json['id'] as String,
+      userId: json['userId'] as String,
       userName: json['userName'] as String,
       shortName: json['shortName'] as String,
       iconColor: json['iconColor'] as String,
@@ -21,17 +22,16 @@ BoardEntity _$BoardEntityFromJson(Map<String, dynamic> json) => BoardEntity(
           .toSet(),
       replyCounts: (json['replyCounts'] as num).toInt(),
       content: json['content'] as String,
-      pinInfo: json['pinInfo'] == null
-          ? null
-          : PinInfo.fromJson(json['pinInfo'] as Map<String, dynamic>),
-      replies: (json['replies'] as List<dynamic>?)
-          ?.map((e) => Reply.fromJson(e as Map<String, dynamic>))
+      pinInfo: PinInfo.fromJson(json['pinInfo'] as Map<String, dynamic>),
+      replies: (json['replies'] as List<dynamic>)
+          .map((e) => Reply.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
 Map<String, dynamic> _$BoardEntityToJson(BoardEntity instance) =>
     <String, dynamic>{
       'id': instance.id,
+      'userId': instance.userId,
       'userName': instance.userName,
       'shortName': instance.shortName,
       'iconColor': instance.iconColor,
@@ -48,11 +48,11 @@ Map<String, dynamic> _$BoardEntityToJson(BoardEntity instance) =>
     };
 
 PinInfo _$PinInfoFromJson(Map<String, dynamic> json) => PinInfo(
-      isAlertPinned: json['isAlertPinned'] as bool,
+      isAlertPinned: json['isAlertPinned'] as bool? ?? false,
       alertPinnedAt: json['alertPinnedAt'] as String?,
-      isPinned: json['isPinned'] as bool,
+      isPinned: json['isPinned'] as bool? ?? false,
       pinnedAt: json['pinnedAt'] as String?,
-      isTopPinned: json['isTopPinned'] as bool,
+      isTopPinned: json['isTopPinned'] as bool? ?? false,
       topPinnedAt: json['topPinnedAt'] as String?,
     );
 

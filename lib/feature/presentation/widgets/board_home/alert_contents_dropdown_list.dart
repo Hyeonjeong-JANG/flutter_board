@@ -64,7 +64,7 @@ class AlertContentsDropdownList extends HookConsumerWidget {
                   children: alertPosts
                       .map((post) => Padding(
                             padding: const EdgeInsets.symmetric(vertical: 4.0),
-                            child: Text(post.boardEntity.content,
+                            child: Text(post.content,
                                 style: TextStyle(fontSize: 14)),
                           ))
                       .toList(),

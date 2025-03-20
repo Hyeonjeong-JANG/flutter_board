@@ -29,12 +29,10 @@ class BoardHomeNotifier extends Notifier<List<BoardHomeViewModel>> {
 
   // 알림판용 정렬: isAlertPinned가 true인 항목만 필터링 후, alertPinnedDate 기준 최신순 정렬
   List<BoardHomeViewModel> get alertBoardContents {
-    final alertList = state
-        .where((item) => item.boardEntity.pinInfo?.isAlertPinned ?? false)
-        .toList();
-    alertList.sort((a, b) =>
-        DateTime.parse(b.boardEntity.pinInfo?.alertPinnedAt ?? '').compareTo(
-            DateTime.parse(a.boardEntity.pinInfo?.alertPinnedAt ?? '')));
+    final alertList =
+        state.where((item) => item.pinInfo.isAlertPinned).toList();
+    alertList.sort((a, b) => DateTime.parse(b.pinInfo.alertPinnedAt ?? '')
+        .compareTo(DateTime.parse(a.pinInfo.alertPinnedAt ?? '')));
     return alertList;
   }
 
@@ -46,38 +44,34 @@ class BoardHomeNotifier extends Notifier<List<BoardHomeViewModel>> {
     final boardList = List<BoardHomeViewModel>.from(state);
     boardList.sort((a, b) {
       // 1. 최상단 고정 여부 비교
-      if (a.boardEntity.pinInfo?.isTopPinned !=
-          b.boardEntity.pinInfo?.isTopPinned) {
-        return a.boardEntity.pinInfo?.isTopPinned ?? false ? -1 : 1;
+      if (a.pinInfo.isTopPinned != b.pinInfo.isTopPinned) {
+        return a.pinInfo.isTopPinned ? -1 : 1;
       }
-      if (a.boardEntity.pinInfo?.isTopPinned !=
-          b.boardEntity.pinInfo?.isTopPinned) {
-        return DateTime.parse(b.boardEntity.pinInfo?.topPinnedAt ?? '')
-            .compareTo(
-                DateTime.parse(a.boardEntity.pinInfo?.topPinnedAt ?? ''));
+      if (a.pinInfo.isTopPinned != b.pinInfo.isTopPinned) {
+        return DateTime.parse(b.pinInfo.topPinnedAt ?? '')
+            .compareTo(DateTime.parse(a.pinInfo.topPinnedAt ?? ''));
       }
       // 2. 일반 고정 여부 비교
-      if (a.boardEntity.pinInfo?.isPinned != b.boardEntity.pinInfo?.isPinned) {
-        return a.boardEntity.pinInfo?.isPinned ?? false ? -1 : 1;
+      if (a.pinInfo.isPinned != b.pinInfo.isPinned) {
+        return a.pinInfo.isPinned ? -1 : 1;
       }
-      if (a.boardEntity.pinInfo?.isPinned != b.boardEntity.pinInfo?.isPinned) {
-        return DateTime.parse(b.boardEntity.pinInfo?.pinnedAt ?? '')
-            .compareTo(DateTime.parse(a.boardEntity.pinInfo?.pinnedAt ?? ''));
+      if (a.pinInfo.isPinned != b.pinInfo.isPinned) {
+        return DateTime.parse(b.pinInfo.pinnedAt ?? '')
+            .compareTo(DateTime.parse(a.pinInfo.pinnedAt ?? ''));
       }
       // 3. 고정되지 않은 항목은 일반 날짜(date) 기준 내림차순 정렬
-      return DateTime.parse(b.boardEntity.createdAt)
-          .compareTo(DateTime.parse(a.boardEntity.createdAt));
+      return DateTime.parse(b.createdAt).compareTo(DateTime.parse(a.createdAt));
     });
     return boardList;
   }
 
   // 좋아요 수 토글
-  void toggleLike(String boardId, String userId) {
-    final index = state.indexWhere((item) => item.boardEntity.id == boardId);
-    if (index != -1) {
-      final updatedEntity = state[index].boardEntity.toggleLike(userId);
-      state[index] = BoardHomeViewModel(boardEntity: updatedEntity);
-      state = List<BoardHomeViewModel>.from(state);
-    }
-  }
+  // void toggleLike(String boardId, String userId) {
+  //   final index = state.indexWhere((item) => item.id == boardId);
+  //   if (index != -1) {
+  //     final updatedEntity = state[index].toggleLike(userId);
+  //     state[index] = BoardHomeViewModel(boardEntity: updatedEntity);
+  //     state = List<BoardHomeViewModel>.from(state);
+  //   }
+  // }
 }

@@ -41,14 +41,14 @@ class ContentBox extends HookConsumerWidget {
                             height: 40.0,
                             decoration: BoxDecoration(
                               color: Color(
-                                  int.parse('0xFF${content.boardEntity.iconColor}')),
+                                  int.parse('0xFF${content.iconColor}')),
                               borderRadius: BorderRadius.circular(
                                 AppSizes.borderRadiusL,
                               ),
                             ),
                             alignment: Alignment.center,
                             child: Text(
-                              content.boardEntity.shortName,
+                              content.shortName,
                               textAlign: TextAlign.center,
                               style: TextStyle(color: Colors.white),
                             ),
@@ -60,22 +60,20 @@ class ContentBox extends HookConsumerWidget {
                             children: [
                               Row(
                                 children: [
-                                  Text(content.boardEntity.userName),
-                                  if (content.boardEntity.isManager)
+                                  Text(content.userName),
+                                  if (content.isManager)
                                     Image.asset(
                                       'assets/icons/crown.png',
                                       width: 16.0,
                                       height: 16.0,
                                     ),
-                                  if (content.boardEntity.pinInfo?.isPinned ??
-                                      false)
+                                  if (content.pinInfo.isPinned)
                                     Image.asset(
                                       'assets/icons/pin.png',
                                       width: 16.0,
                                       height: 16.0,
                                     ),
-                                  if (content.boardEntity.pinInfo?.isAlertPinned ??
-                                      false)
+                                  if (content.pinInfo.isAlertPinned)
                                     Image.asset(
                                       'assets/icons/speaker.png',
                                       width: 16.0,
@@ -85,7 +83,7 @@ class ContentBox extends HookConsumerWidget {
                               ),
                               Text(
                                 DateFormatter.formatToKoreanDateTime(
-                                    content.boardEntity.createdAt),
+                                    content.createdAt),
                                 style: TextStyle(
                                   color: AppColor.grey,
                                   fontSize: 12.0,
@@ -122,7 +120,7 @@ class ContentBox extends HookConsumerWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            content.boardEntity.content,
+                            content.content,
                             style: TextStyle(fontWeight: FontWeight.bold),
                             maxLines: maxLines,
                             overflow: TextOverflow
@@ -151,8 +149,8 @@ class ContentBox extends HookConsumerWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text('좋아요 ${content.boardEntity.likeCounts}개'),
-                    Text('댓글 ${content.boardEntity.replyCounts}개'),
+                    Text('좋아요 ${content.likeCounts}개'),
+                    Text('댓글 ${content.replyCounts}개'),
                   ],
                 ),
                 SizedBox(height: AppSizes.spacingM),
