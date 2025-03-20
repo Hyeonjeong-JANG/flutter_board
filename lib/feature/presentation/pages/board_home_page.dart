@@ -30,17 +30,13 @@ class BoardHomePage extends HookConsumerWidget {
         children: [
           boardContents.isEmpty
               ? const Center(child: CircularProgressIndicator())
-              : Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: AppSizes.gapL),
-                  child: Column(
-                    children: [
-                      AlertContentsDropdownList(),
-                      SizedBox(height: AppSizes.spacingL),
-                      BoardList(),
-                    ],
-                  ),
-                ),
+              : Column(
+                children: [
+                  AlertContentsDropdownList(),
+                  SizedBox(height: AppSizes.spacingL),
+                  BoardList(),
+                ],
+              ),
           FloatingGradientButton(
             title: '게시글 작성하기',
             onTap: () {

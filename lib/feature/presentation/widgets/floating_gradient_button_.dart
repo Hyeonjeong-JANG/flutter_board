@@ -16,8 +16,8 @@ class FloatingGradientButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Positioned(
       bottom: 20.0,
-      right: 20.0,
-      left: 20.0,
+      right: 0,
+      left: 0,
       child: Material(
         color: Colors.transparent,
         child: InkWell(

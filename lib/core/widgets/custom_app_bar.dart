@@ -5,11 +5,13 @@ class CustomAppBar extends StatelessWidget
     implements PreferredSizeWidget {
   final String title;
   final bool? showBackButton;
-  const CustomAppBar({super.key, required this.title, this.showBackButton = true});
+  final Color? backgroundColor;
+  const CustomAppBar({super.key, required this.title, this.showBackButton = true, this.backgroundColor});
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor: backgroundColor ?? Colors.white,
       leading: showBackButton == true ? IconButton(
         onPressed: () {
           context.pop();
