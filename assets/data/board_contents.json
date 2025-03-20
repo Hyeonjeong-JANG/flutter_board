@@ -1,7 +1,7 @@
 {
   "boardContents": [
     {
-      "id": "1",
+      "boardId": "1",
       "userId": "직원6",
       "userName": "최지영",
       "shortName": "지영",
@@ -24,7 +24,7 @@
       },
       "replies": [
         {
-          "id": "1",
+          "replyId": "1",
           "userId": "직원3",
           "userName": "김영희",
           "shortName": "영희",
@@ -35,7 +35,7 @@
           "likeUserIds": ["직원3", "직원4", "직원6"]
         },
         {
-          "id": "2",
+          "replyId": "2",
           "userId": "직원4",
           "userName": "김미주",
           "shortName": "미주",
@@ -48,7 +48,7 @@
       ]
     },
     {
-      "id": "2",
+      "boardId": "2",
       "userId": "사장",
       "userName": "김지철",
       "shortName": "지철",
@@ -71,7 +71,7 @@
       },
       "replies": [
         {
-          "id": "3",
+          "replyId": "3",
           "userId": "직원3",
           "userName": "김영희",
           "shortName": "영희",
@@ -82,7 +82,7 @@
           "likeUserIds": ["직원2", "직원4", "직원6"]
         },
         {
-          "id": "4",
+          "replyId": "4",
           "userId": "직원4",
           "userName": "김미주",
           "shortName": "미주",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "id": "3",
+      "boardId": "3",
       "userId": "직원6",
       "userName": "최지영",
       "shortName": "지영",
@@ -118,7 +118,8 @@
       },
       "replies": [
         {
-          "id": "5",
+          "replyId": "5",
+          "userId": "직원3",  
           "userName": "김영희",
           "shortName": "영희",
           "iconColor": "9E33C2",
@@ -128,7 +129,8 @@
           "likeUserIds": ["직원2", "직원3", "직원6"]
         },
         {
-          "id": "6",
+          "replyId": "6",
+          "userId": "직원4",
           "userName": "김미주",
           "shortName": "미주",
           "iconColor": "9E33C2",
@@ -140,7 +142,7 @@
       ]
     },
     {
-      "id": "4",
+      "boardId": "4",
       "userId": "직원6",
       "userName": "최지영",
       "shortName": "지영",
@@ -163,7 +165,7 @@
       },
       "replies": [
         {
-          "id": "7",
+          "replyId": "7",
           "userId": "직원3",
           "userName": "김영희",
           "shortName": "영희",
@@ -174,7 +176,7 @@
           "likeUserIds": ["직원2", "직원3", "직원6"]
         },
         {
-          "id": "8",
+          "replyId": "8",
           "userId": "직원4",
           "userName": "김미주",
           "shortName": "미주",
@@ -187,7 +189,7 @@
       ]
     },
     {
-      "id": "5",
+      "boardId": "5",
       "userId": "직원6",
       "userName": "최지영",
       "shortName": "지영",
@@ -210,7 +212,7 @@
       },
       "replies": [
         {
-          "id": "9",
+          "replyId": "9",
           "userId": "직원3",
           "userName": "김영희",
           "shortName": "영희",
@@ -221,7 +223,7 @@
           "likeUserIds": ["직원2", "직원3", "직원6"]
         },
         {
-          "id": "10",
+          "replyId": "10",
           "userId": "직원4",
           "userName": "김미주",
           "shortName": "미주",
@@ -234,7 +236,7 @@
       ]
     },
     {
-      "id": "6",
+      "boardId": "6",
       "userId": "직원6",
       "userName": "최지영",
       "shortName": "지영",
@@ -257,7 +259,8 @@
       },
       "replies": [
         {
-          "id": "11",
+          "replyId": "11",
+          "userId": "직원3",
           "userName": "김영희",
           "shortName": "영희",
           "iconColor": "9E33C2",
@@ -267,7 +270,8 @@
           "likeUserIds": ["직원2", "직원3", "직원6"]
         },
         {
-          "id": "12",
+          "replyId": "12",
+          "userId": "직원4",
           "userName": "김미주",
           "shortName": "미주",
           "iconColor": "9E33C2",
@@ -279,7 +283,7 @@
       ]
     },
     {
-      "id": "7",
+      "boardId": "7",
       "userId": "직원6",
       "userName": "최지영",
       "shortName": "지영",
@@ -302,7 +306,7 @@
       },
       "replies": [
         {
-          "id": "13",
+          "replyId": "13",
           "userId": "직원3",
           "userName": "김영희",
           "shortName": "영희",
@@ -313,7 +317,7 @@
           "likeUserIds": ["직원2", "직원3", "직원6"]
         },
         {
-          "id": "14",
+          "replyId": "14",
           "userId": "직원4",
           "userName": "김미주",
           "shortName": "미주",
@@ -326,7 +330,7 @@
       ]
     },
     {
-      "id": "8",
+      "boardId": "8",
       "userId": "직원6",
       "userName": "최지영",
       "shortName": "지영",
@@ -349,7 +353,8 @@
       },
       "replies": [
         {
-          "id": "15",
+          "replyId": "15",
+          "userId": "직원3",
           "userName": "김영희",
           "shortName": "영희",
           "iconColor": "9E33C2",
@@ -359,7 +364,8 @@
           "likeUserIds": ["직원2", "직원3", "직원6"]
         },
         {
-          "id": "16",
+          "replyId": "16",
+          "userId": "직원4",
           "userName": "김미주",
           "shortName": "미주",
           "iconColor": "9E33C2",
@@ -371,7 +377,7 @@
       ]
     },
     {
-      "id": "9",
+      "boardId": "9",
       "userId": "직원6",
       "userName": "최지영",
       "shortName": "지영",
@@ -394,7 +400,7 @@
       },
       "replies": [
         {
-          "id": "17",
+          "replyId": "17",
           "userId": "직원3",
           "userName": "김영희",
           "shortName": "영희",
@@ -405,7 +411,7 @@
           "likeUserIds": ["직원2", "직원3", "직원6"]
         },
         {
-          "id": "18",
+          "replyId": "18",
           "userId": "직원4",
           "userName": "김미주",
           "shortName": "미주",

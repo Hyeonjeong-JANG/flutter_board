@@ -4,7 +4,8 @@ part 'board_detail_viewmodel.g.dart';
 
 @JsonSerializable()
 class BoardDetailViewModel {
-  final String id;
+  final String boardId;
+  final String userId;
   final String userName;
   final String shortName;
   final String iconColor;
@@ -20,7 +21,8 @@ class BoardDetailViewModel {
   final Replies replies;
 
   BoardDetailViewModel({
-    required this.id,
+    required this.boardId,
+    required this.userId,
     required this.userName,
     required this.shortName,
     required this.iconColor,
@@ -42,7 +44,8 @@ class BoardDetailViewModel {
 
 @JsonSerializable()
 class Replies {
-  final String id;
+  final String replyId;
+  final String userId;
   final String userName;
   final String shortName;
   final String iconColor;
@@ -53,7 +56,8 @@ class Replies {
   final int likeCounts;
 
   Replies({
-    required this.id,
+    required this.replyId,
+    required this.userId,
     required this.userName,
     required this.shortName,
     required this.iconColor,

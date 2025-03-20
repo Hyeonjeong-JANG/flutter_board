@@ -4,7 +4,7 @@ part 'board_home_viewmodel.g.dart';
 
 @JsonSerializable()
 class BoardHomeViewModel {
-  final String id;
+  final String boardId;
   final String userId;
   final String userName;
   final String shortName;
@@ -20,7 +20,7 @@ class BoardHomeViewModel {
   final PinInfo pinInfo;
 
   BoardHomeViewModel({
-    required this.id,
+    required this.boardId,
     required this.userId,
     required this.userName,
     required this.shortName,

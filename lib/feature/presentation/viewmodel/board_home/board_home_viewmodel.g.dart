@@ -8,7 +8,7 @@ part of 'board_home_viewmodel.dart';
 
 BoardHomeViewModel _$BoardHomeViewModelFromJson(Map<String, dynamic> json) =>
     BoardHomeViewModel(
-      id: json['id'] as String,
+      boardId: json['boardId'] as String,
       userId: json['userId'] as String,
       userName: json['userName'] as String,
       shortName: json['shortName'] as String,
@@ -28,7 +28,7 @@ BoardHomeViewModel _$BoardHomeViewModelFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$BoardHomeViewModelToJson(BoardHomeViewModel instance) =>
     <String, dynamic>{
-      'id': instance.id,
+      'boardId': instance.boardId,
       'userId': instance.userId,
       'userName': instance.userName,
       'shortName': instance.shortName,

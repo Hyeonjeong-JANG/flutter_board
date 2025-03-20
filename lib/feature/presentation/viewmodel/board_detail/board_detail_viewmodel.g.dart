@@ -9,7 +9,8 @@ part of 'board_detail_viewmodel.dart';
 BoardDetailViewModel _$BoardDetailViewModelFromJson(
         Map<String, dynamic> json) =>
     BoardDetailViewModel(
-      id: json['id'] as String,
+      boardId: json['boardId'] as String,
+      userId: json['userId'] as String,
       userName: json['userName'] as String,
       shortName: json['shortName'] as String,
       iconColor: json['iconColor'] as String,
@@ -28,7 +29,8 @@ BoardDetailViewModel _$BoardDetailViewModelFromJson(
 Map<String, dynamic> _$BoardDetailViewModelToJson(
         BoardDetailViewModel instance) =>
     <String, dynamic>{
-      'id': instance.id,
+      'boardId': instance.boardId,
+      'userId': instance.userId,
       'userName': instance.userName,
       'shortName': instance.shortName,
       'iconColor': instance.iconColor,
@@ -45,7 +47,8 @@ Map<String, dynamic> _$BoardDetailViewModelToJson(
     };
 
 Replies _$RepliesFromJson(Map<String, dynamic> json) => Replies(
-      id: json['id'] as String,
+      replyId: json['replyId'] as String,
+      userId: json['userId'] as String,
       userName: json['userName'] as String,
       shortName: json['shortName'] as String,
       iconColor: json['iconColor'] as String,
@@ -57,7 +60,8 @@ Replies _$RepliesFromJson(Map<String, dynamic> json) => Replies(
     );
 
 Map<String, dynamic> _$RepliesToJson(Replies instance) => <String, dynamic>{
-      'id': instance.id,
+      'replyId': instance.replyId,
+      'userId': instance.userId,
       'userName': instance.userName,
       'shortName': instance.shortName,
       'iconColor': instance.iconColor,

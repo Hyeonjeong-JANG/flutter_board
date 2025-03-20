@@ -28,7 +28,7 @@ final routerProvider = Provider.family<GoRouter, String>((ref, userId) {
           ),
           // 게시글 상세 페이지
           GoRoute(
-            path: 'board/:id',
+            path: '/:boardId',
             builder: (context, state) => const BoardDetailPage(),
           ),
         ],
