@@ -1,6 +1,5 @@
 import 'package:board/core/constants/size.dart';
 import 'package:board/core/layouts/default_layout.dart';
-import 'package:board/core/widgets/custom_app_bar.dart';
 import 'package:board/feature/presentation/viewmodel/board_home/board_home_provider.dart';
 import 'package:board/feature/presentation/widgets/board_home/alert_contents_dropdown_list.dart';
 import 'package:board/feature/presentation/widgets/board_home/board_list.dart';

@@ -16,6 +16,7 @@ BoardDetailViewModel _$BoardDetailViewModelFromJson(
       iconColor: json['iconColor'] as String,
       content: json['content'] as String,
       createdAt: json['createdAt'] as String,
+      updatedAt: json['updatedAt'] as String?,
       isOwner: json['isOwner'] as bool,
       isManager: json['isManager'] as bool,
       likeCounts: (json['likeCounts'] as num).toInt(),
@@ -23,8 +24,8 @@ BoardDetailViewModel _$BoardDetailViewModelFromJson(
       isAlertPinned: json['isAlertPinned'] as bool,
       isPinned: json['isPinned'] as bool,
       isTopPinned: json['isTopPinned'] as bool,
-      replies: (json['replies'] as List<dynamic>)
-          .map((e) => Reply.fromJson(e as Map<String, dynamic>))
+      replies: (json['replies'] as List<dynamic>?)
+          ?.map((e) => Reply.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
@@ -37,6 +38,7 @@ Map<String, dynamic> _$BoardDetailViewModelToJson(
       'shortName': instance.shortName,
       'iconColor': instance.iconColor,
       'createdAt': instance.createdAt,
+      'updatedAt': instance.updatedAt,
       'isOwner': instance.isOwner,
       'isManager': instance.isManager,
       'likeCounts': instance.likeCounts,

@@ -10,6 +10,7 @@ class BoardDetailViewModel {
   final String shortName;
   final String iconColor;
   final String createdAt;
+  final String? updatedAt;
   final bool isOwner;
   final bool isManager;
   final int likeCounts;
@@ -18,7 +19,7 @@ class BoardDetailViewModel {
   final bool isAlertPinned;
   final bool isPinned;
   final bool isTopPinned;
-  final List<Reply> replies;
+  final List<Reply>? replies;
 
   BoardDetailViewModel({
     required this.boardId,
@@ -28,6 +29,7 @@ class BoardDetailViewModel {
     required this.iconColor,
     required this.content,
     required this.createdAt,
+    this.updatedAt,
     required this.isOwner,
     required this.isManager,
     required this.likeCounts,
@@ -35,7 +37,7 @@ class BoardDetailViewModel {
     required this.isAlertPinned,
     required this.isPinned,
     required this.isTopPinned,
-    required this.replies,
+    this.replies,
   });
 
   factory BoardDetailViewModel.fromJson(Map<String, dynamic> json) =>

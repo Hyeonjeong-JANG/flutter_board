@@ -15,6 +15,7 @@ class BoardDetailNotifier extends Notifier<BoardDetailViewModel> {
       iconColor: '',
       content: '',
       createdAt: '',
+      updatedAt: '',
       isOwner: false,
       isManager: false,
       likeCounts: 0,
