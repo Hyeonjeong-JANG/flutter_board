@@ -4,6 +4,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 class BoardDetailNotifier extends Notifier<BoardDetailViewModel> {
   @override
   BoardDetailViewModel build() => BoardDetailViewModel(
+        id: '',
         userName: '',
         shortName: '',
         iconColor: '',
@@ -17,6 +18,7 @@ class BoardDetailNotifier extends Notifier<BoardDetailViewModel> {
         isPinned: false,
         isTopPinned: false,
         replies: Replies(
+          id: '',
           userName: '',
           shortName: '',
           iconColor: '',
