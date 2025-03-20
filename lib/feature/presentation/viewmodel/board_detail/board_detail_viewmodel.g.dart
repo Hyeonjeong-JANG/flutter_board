@@ -23,7 +23,9 @@ BoardDetailViewModel _$BoardDetailViewModelFromJson(
       isAlertPinned: json['isAlertPinned'] as bool,
       isPinned: json['isPinned'] as bool,
       isTopPinned: json['isTopPinned'] as bool,
-      replies: Replies.fromJson(json['replies'] as Map<String, dynamic>),
+      replies: (json['replies'] as List<dynamic>)
+          .map((e) => Reply.fromJson(e as Map<String, dynamic>))
+          .toList(),
     );
 
 Map<String, dynamic> _$BoardDetailViewModelToJson(
@@ -46,7 +48,7 @@ Map<String, dynamic> _$BoardDetailViewModelToJson(
       'replies': instance.replies,
     };
 
-Replies _$RepliesFromJson(Map<String, dynamic> json) => Replies(
+Reply _$ReplyFromJson(Map<String, dynamic> json) => Reply(
       replyId: json['replyId'] as String,
       userId: json['userId'] as String,
       userName: json['userName'] as String,
@@ -59,7 +61,7 @@ Replies _$RepliesFromJson(Map<String, dynamic> json) => Replies(
       likeCounts: (json['likeCounts'] as num).toInt(),
     );
 
-Map<String, dynamic> _$RepliesToJson(Replies instance) => <String, dynamic>{
+Map<String, dynamic> _$ReplyToJson(Reply instance) => <String, dynamic>{
       'replyId': instance.replyId,
       'userId': instance.userId,
       'userName': instance.userName,

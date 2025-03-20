@@ -18,7 +18,7 @@ class BoardDetailViewModel {
   final bool isAlertPinned;
   final bool isPinned;
   final bool isTopPinned;
-  final Replies replies;
+  final List<Reply> replies;
 
   BoardDetailViewModel({
     required this.boardId,
@@ -43,7 +43,7 @@ class BoardDetailViewModel {
 }
 
 @JsonSerializable()
-class Replies {
+class Reply {
   final String replyId;
   final String userId;
   final String userName;
@@ -55,7 +55,7 @@ class Replies {
   final bool isManager;
   final int likeCounts;
 
-  Replies({
+  Reply({
     required this.replyId,
     required this.userId,
     required this.userName,
@@ -68,6 +68,5 @@ class Replies {
     required this.likeCounts,
   });
 
-  factory Replies.fromJson(Map<String, dynamic> json) =>
-      _$RepliesFromJson(json);
+  factory Reply.fromJson(Map<String, dynamic> json) => _$ReplyFromJson(json);
 }

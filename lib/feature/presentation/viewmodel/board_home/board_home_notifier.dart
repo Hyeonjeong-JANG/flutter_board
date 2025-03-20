@@ -22,7 +22,7 @@ class BoardHomeNotifier extends Notifier<List<BoardHomeViewModel>> {
         jsonData['boardContents'].map((x) => BoardHomeViewModel.fromJson(x)));
   }
 
-  // 데이터를 세팅하는 메서드
+  // 데이터를 세팅하는 메서드 -> 안 쓰는 듯?
   void setContents(List<BoardHomeViewModel> contents) {
     state = contents;
   }
