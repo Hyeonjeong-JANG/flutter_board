@@ -31,12 +31,12 @@ class BoardHomePage extends HookConsumerWidget {
           boardContents.isEmpty
               ? const Center(child: CircularProgressIndicator())
               : Column(
-                children: [
-                  AlertContentsDropdownList(),
-                  SizedBox(height: AppSizes.spacingL),
-                  BoardList(),
-                ],
-              ),
+                  children: [
+                    AlertContentsDropdownList(),
+                    SizedBox(height: AppSizes.spacingL),
+                    BoardList(),
+                  ],
+                ),
           FloatingGradientButton(
             title: '공지 작성하기',
             onTap: () {

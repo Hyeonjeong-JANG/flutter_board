@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-
 // 알림 요약
 class AlertContentsDropdownList extends HookConsumerWidget {
   const AlertContentsDropdownList({super.key});
@@ -15,7 +14,7 @@ class AlertContentsDropdownList extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     // 알림 드롭다운 상태
     final isDropdownOpen = useState(false);
-    
+    // final alertPosts = ref.watch(boardHomeProvider.notifier).alertBoardContents;
 
     return Column(
       children: [
@@ -65,7 +64,7 @@ class AlertContentsDropdownList extends HookConsumerWidget {
                   children: alertPosts
                       .map((post) => Padding(
                             padding: const EdgeInsets.symmetric(vertical: 4.0),
-                            child: Text(post.content,
+                            child: Text(post.boardEntity.content,
                                 style: TextStyle(fontSize: 14)),
                           ))
                       .toList(),

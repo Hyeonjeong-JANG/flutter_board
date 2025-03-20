@@ -149,6 +149,82 @@
       "paymentMethod": null,
       "stores": [],
       "notifications": []
+    },
+    {
+      "id": "직원3",
+      "role": "employee",
+      "fullName": "김영희",
+      "shortName": "영희",
+      "birthDate": "1992-04-10",
+      "profileColor": null,
+      "paymentMethod": null,
+      "stores": [
+        {
+          "storeId": "storeA",
+          "bizName": "다토스국밥 경성대점",
+          "baseAddress": "부산 남구 대연동 123-12",
+          "detailAddress": "3층",
+          "logoUrl": "assets/images/store.svg"
+        }
+      ],
+      "permissions": ["attendance.view", "support.contact", "support.faq"]
+    },
+    {
+      "id": "직원4",
+      "role": "employee",
+      "fullName": "김미주",
+      "shortName": "미주",
+      "birthDate": "1993-06-15",
+      "profileColor": null,
+      "paymentMethod": null,
+      "stores": [
+        {
+          "storeId": "storeA",
+          "bizName": "다토스국밥 경성대점",
+          "baseAddress": "부산 남구 대연동 123-12",
+          "detailAddress": "3층",
+          "logoUrl": "assets/images/store.svg"
+        }
+      ],
+      "permissions": ["attendance.view", "support.contact", "support.faq"]
+    },
+    {
+      "id": "직원5",
+      "role": "employee",
+      "fullName": "이민호",
+      "shortName": "민호",
+      "birthDate": "1991-09-20",
+      "profileColor": null,
+      "paymentMethod": null,
+      "stores": [
+        {
+          "storeId": "storeA",
+          "bizName": "다토스국밥 경성대점",
+          "baseAddress": "부산 남구 대연동 123-12",
+          "detailAddress": "3층",
+          "logoUrl": "assets/images/store.svg"
+        }
+      ],
+      "permissions": ["attendance.view", "support.contact", "support.faq"]
+    },
+    {
+      "id": "직원6",
+      "role": "employee",
+      "fullName": "최지영",
+      "shortName": "지영",
+      "birthDate": "1994-12-05",
+      "profileColor": null,
+      "paymentMethod": null,
+      "stores": [
+        {
+          "storeId": "storeA",
+          "bizName": "다토스국밥 경성대점",
+          "baseAddress": "부산 남구 대연동 123-12",
+          "detailAddress": "3층",
+          "logoUrl": "assets/images/store.svg"
+        }
+      ],
+      "permissions": ["attendance.view", "support.contact", "support.faq"]
     }
   ]
 }
