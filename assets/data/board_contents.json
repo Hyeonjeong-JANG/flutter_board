@@ -37,7 +37,34 @@
           "createdAt": "2024-01-05T08:00:00",
           "content": "111111111111111",
           "likeCounts": 2,
-          "likeUserIds": ["직원3", "직원4", "직원6"]
+          "likeUserIds": ["직원3", "직원4", "직원6"],
+          "parentReplyId": null,
+          "childReplies": [
+            {
+              "replyId": "1-1",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "1"
+            },
+            {
+              "replyId": "1-2",
+              "userId": "직원3",
+              "userName": "김영희",
+              "shortName": "영희",
+              "iconColor": "9E33C2",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "대대대대대댓걸",
+              "likeCounts": 0,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "1"
+            }
+          ]
         },
         {
           "replyId": "2",
@@ -48,7 +75,34 @@
           "createdAt": "2024-01-05T08:00:00",
           "content": "222222222222222",
           "likeCounts": 2,
-          "likeUserIds": ["사장", "직원4", "직원6"]
+          "likeUserIds": ["사장", "직원4", "직원6"],
+          "parentReplyId": null,
+          "childReplies": [
+            {
+              "replyId": "2-1",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "2"
+            },
+            {
+              "replyId": "1-2",
+              "userId": "직원3",
+              "userName": "김영희",
+              "shortName": "영희",
+              "iconColor": "9E33C2",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "대대대대대댓걸",
+              "likeCounts": 0,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "2"
+            }
+          ]
         }
       ]
     },
@@ -89,7 +143,34 @@
           "createdAt": "2024-01-05T08:00:00",
           "content": "333333333333333",
           "likeCounts": 2,
-          "likeUserIds": ["직원2", "직원4", "직원6"]
+          "likeUserIds": ["직원2", "직원4", "직원6"],
+          "parentReplyId": null,
+          "childReplies": [
+            {
+              "replyId": "3-1",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "3"
+            },
+            {
+              "replyId": "3-2",
+              "userId": "직원3",
+              "userName": "김영희",
+              "shortName": "영희",
+              "iconColor": "9E33C2",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "대대대대대댓걸",
+              "likeCounts": 0,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "1"
+            }
+          ]
         },
         {
           "replyId": "4",
@@ -100,7 +181,34 @@
           "createdAt": "2024-01-05T08:00:00",
           "content": "444444444444444",
           "likeCounts": 2,
-          "likeUserIds": ["직원2", "직원3", "직원6"]
+          "likeUserIds": ["직원2", "직원3", "직원6"],
+          "parentReplyId": null,
+          "childReplies": [
+            {
+              "replyId": "4-1",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "4"
+            },
+            {
+              "replyId": "4-2",
+              "userId": "직원3",
+              "userName": "김영희",
+              "shortName": "영희",
+              "iconColor": "9E33C2",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "대대대대대댓걸",
+              "likeCounts": 0,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "4"
+            }
+          ]
         }
       ]
     },
@@ -141,7 +249,34 @@
           "createdAt": "2024-01-05T08:00:00",
           "content": "555555555555555",
           "likeCounts": 2,
-          "likeUserIds": ["직원2", "직원3", "직원6"]
+          "likeUserIds": ["직원2", "직원3", "직원6"],
+          "parentReplyId": null,
+          "childReplies": [
+            {
+              "replyId": "5-1",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "5"
+            },
+            {
+              "replyId": "5-2",
+              "userId": "직원3",
+              "userName": "김영희",
+              "shortName": "영희",
+              "iconColor": "9E33C2",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "대대대대대댓걸",
+              "likeCounts": 0,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "5"
+            }
+          ]
         },
         {
           "replyId": "6",
@@ -152,7 +287,34 @@
           "createdAt": "2024-01-05T08:00:00",
           "content": "666666666666666",
           "likeCounts": 2,
-          "likeUserIds": ["직원2", "직원3", "직원6"]
+          "likeUserIds": ["직원2", "직원3", "직원6"],
+          "parentReplyId": null,
+          "childReplies": [
+            {
+              "replyId": "6-1",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "6"
+            },
+            {
+              "replyId": "6-2",
+              "userId": "직원3",
+              "userName": "김영희",
+              "shortName": "영희",
+              "iconColor": "9E33C2",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "대대대대대댓걸",
+              "likeCounts": 0,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "6"
+            }
+          ]
         }
       ]
     },
@@ -193,7 +355,34 @@
           "createdAt": "2024-01-05T08:00:00",
           "content": "777777777777777",
           "likeCounts": 2,
-          "likeUserIds": ["직원2", "직원3", "직원6"]
+          "likeUserIds": ["직원2", "직원3", "직원6"],
+          "parentReplyId": null,
+          "childReplies": [
+            {
+              "replyId": "7-1",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "7"
+            },
+            {
+              "replyId": "7-2",
+              "userId": "직원3",
+              "userName": "김영희",
+              "shortName": "영희",
+              "iconColor": "9E33C2",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "대대대대대댓걸",
+              "likeCounts": 0,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "7"
+            }
+          ]
         },
         {
           "replyId": "8",
@@ -204,7 +393,34 @@
           "createdAt": "2024-01-05T08:00:00",
           "content": "888888888888888",
           "likeCounts": 2,
-          "likeUserIds": ["직원2", "직원3", "직원6"]
+          "likeUserIds": ["직원2", "직원3", "직원6"],
+          "parentReplyId": null,
+          "childReplies": [
+            {
+              "replyId": "8-1",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "8"
+            },
+            {
+              "replyId": "8-2",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "8"
+            }
+          ]
         }
       ]
     },
@@ -245,7 +461,34 @@
           "createdAt": "2024-01-05T08:00:00",
           "content": "999999999999999",
           "likeCounts": 2,
-          "likeUserIds": ["직원2", "직원3", "직원6"]
+          "likeUserIds": ["직원2", "직원3", "직원6"],
+          "parentReplyId": null,
+          "childReplies": [
+            {
+              "replyId": "9-1",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "9"
+            },
+            {
+              "replyId": "9-2",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "9"
+            }
+          ]
         },
         {
           "replyId": "10",
@@ -256,7 +499,34 @@
           "createdAt": "2024-01-05T08:00:00",
           "content": "101010101010101",
           "likeCounts": 2,
-          "likeUserIds": ["직원2", "직원3", "직원6"]
+          "likeUserIds": ["직원2", "직원3", "직원6"],
+          "parentReplyId": null,
+          "childReplies": [
+            {
+              "replyId": "10-1",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "10"
+            },
+            {
+              "replyId": "10-2",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "10"
+            }
+          ]
         }
       ]
     },
@@ -297,7 +567,34 @@
           "createdAt": "2024-01-05T08:00:00",
           "content": "111111111111111",
           "likeCounts": 2,
-          "likeUserIds": ["직원2", "직원3", "직원6"]
+          "likeUserIds": ["직원2", "직원3", "직원6"],
+          "parentReplyId": null,
+          "childReplies": [
+            {
+              "replyId": "11-1",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "11"
+            },
+            {
+              "replyId": "11-2",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "11"
+            }
+          ]
         },
         {
           "replyId": "12",
@@ -308,7 +605,34 @@
           "createdAt": "2024-01-05T08:00:00",
           "content": "121212121212121",
           "likeCounts": 2,
-          "likeUserIds": ["직원2", "직원3", "직원6"]
+          "likeUserIds": ["직원2", "직원3", "직원6"],
+          "parentReplyId": null,
+          "childReplies": [
+            {
+              "replyId": "12-1",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "12"
+            },
+            {
+              "replyId": "12-2",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "12"
+            }
+          ]
         }
       ]
     },
@@ -349,7 +673,34 @@
           "createdAt": "2024-01-05T08:00:00",
           "content": "131313131313131",
           "likeCounts": 2,
-          "likeUserIds": ["직원2", "직원3", "직원6"]
+          "likeUserIds": ["직원2", "직원3", "직원6"],
+          "parentReplyId": null,
+          "childReplies": [
+            {
+              "replyId": "13-1",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "13"
+            },
+            {
+              "replyId": "13-2",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "13"
+            }
+          ]
         },
         {
           "replyId": "14",
@@ -360,7 +711,34 @@
           "createdAt": "2024-01-05T08:00:00",
           "content": "141414141414141",
           "likeCounts": 2,
-          "likeUserIds": ["직원2", "직원3", "직원6"]
+          "likeUserIds": ["직원2", "직원3", "직원6"],
+          "parentReplyId": null,
+          "childReplies": [
+            {
+              "replyId": "14-1",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "14"
+            },
+            {
+              "replyId": "14-2",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "14"
+            }
+          ]
         }
       ]
     },
@@ -401,7 +779,34 @@
           "createdAt": "2024-01-05T08:00:00",
           "content": "151515151515151",
           "likeCounts": 2,
-          "likeUserIds": ["직원2", "직원3", "직원6"]
+          "likeUserIds": ["직원2", "직원3", "직원6"],
+          "parentReplyId": null,
+          "childReplies": [
+            {
+              "replyId": "15-1",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "15"
+            },
+            {
+              "replyId": "15-2",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "15"
+            }
+          ]
         },
         {
           "replyId": "16",
@@ -412,7 +817,34 @@
           "createdAt": "2024-01-05T08:00:00",
           "content": "161616161616161",
           "likeCounts": 2,
-          "likeUserIds": ["직원2", "직원3", "직원6"]
+          "likeUserIds": ["직원2", "직원3", "직원6"],
+          "parentReplyId": null,
+          "childReplies": [
+            {
+              "replyId": "16-1",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "16"
+            },
+            {
+              "replyId": "16-2",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "16"
+            }
+          ]
         }
       ]
     },
@@ -453,7 +885,34 @@
           "createdAt": "2024-01-05T08:00:00",
           "content": "171717171717171",
           "likeCounts": 2,
-          "likeUserIds": ["직원2", "직원3", "직원6"]
+          "likeUserIds": ["직원2", "직원3", "직원6"],
+          "parentReplyId": null,
+          "childReplies": [
+            {
+              "replyId": "17-1",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "17"
+            },
+            {
+              "replyId": "17-2",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "17"
+            }
+          ]
         },
         {
           "replyId": "18",
@@ -464,7 +923,34 @@
           "createdAt": "2024-01-05T08:00:00",
           "content": "181818181818181",
           "likeCounts": 2,
-          "likeUserIds": ["직원2", "직원3", "직원6"]
+          "likeUserIds": ["직원2", "직원3", "직원6"],
+          "parentReplyId": null,
+          "childReplies": [
+            {
+              "replyId": "18-1",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "18"
+            },
+            {
+              "replyId": "18-2",
+              "userId": "사장",
+              "userName": "김지철",
+              "shortName": "지철",
+              "iconColor": "FF5733",
+              "createdAt": "2024-01-05T09:30:00",
+              "content": "좋아요! 모두 협력 부탁드립니다.",
+              "likeCounts": 3,
+              "likeUserIds": ["직원3", "직원4", "직원6"],
+              "parentReplyId": "18"
+            }
+          ]
         }
       ]
     }

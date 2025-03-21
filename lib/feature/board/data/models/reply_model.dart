@@ -11,6 +11,8 @@ class ReplyModel {
   final String createdAt;
   final int likeCounts;
   final Set<String>? likeUserIds;
+  final String? parentReplyId;
+  final List<ReplyModel>? childReplies;
   ReplyModel({
     required this.replyId,
     required this.userId,
@@ -21,6 +23,8 @@ class ReplyModel {
     required this.createdAt,
     required this.likeCounts,
     this.likeUserIds,
+    this.parentReplyId,
+    this.childReplies,
   });
   factory ReplyModel.fromJson(Map<String, dynamic> json) {
     return ReplyModel(
@@ -33,10 +37,15 @@ class ReplyModel {
       createdAt: json['createdAt'] as String,
       likeCounts: json['likeCounts'] as int,
       likeUserIds: (json['likeUserIds'] as List<dynamic>?)
-        ?.map((e) => e.toString())
-        .toSet() ?? {},
+              ?.map((e) => e.toString())
+              .toSet() ??
+          {},
+      parentReplyId: json['parentReplyId'] as String?,
+      childReplies: (json['childReplies'] as List<dynamic>?)
+          ?.map((e) => ReplyModel.fromJson(e as Map<String, dynamic>))
+          .toList(),
     );
-  } 
+  }
 
   Reply toEntity() {
     return Reply(
@@ -49,6 +58,8 @@ class ReplyModel {
       createdAt: createdAt,
       likeCounts: likeCounts,
       likeUserIds: likeUserIds,
+      parentReplyId: parentReplyId,
+      childReplies: childReplies?.map((e) => e.toEntity()).toList(),
     );
   }
 }

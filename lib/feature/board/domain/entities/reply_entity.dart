@@ -11,6 +11,8 @@ class Reply {
   final String content;
   final int likeCounts;
   final Set<String>? likeUserIds;
+  final String? parentReplyId;
+  final List<Reply>? childReplies;
   Reply({
     required this.id,
     required this.userId,
@@ -21,6 +23,8 @@ class Reply {
     required this.content,
     required this.likeCounts,
     this.likeUserIds,
+    this.parentReplyId,
+    this.childReplies,
   });
 
   Reply copyWith({
@@ -33,6 +37,8 @@ class Reply {
     String? content,
     int? likeCounts,
     Set<String>? likeUserIds,
+    String? parentReplyId,
+    List<Reply>? childReplies,
   }) {
     return Reply(
       id: id ?? this.id,
@@ -44,6 +50,8 @@ class Reply {
       content: content ?? this.content,
       likeCounts: likeCounts ?? this.likeCounts,
       likeUserIds: likeUserIds ?? this.likeUserIds,
+      parentReplyId: parentReplyId ?? this.parentReplyId,
+      childReplies: childReplies ?? this.childReplies,
     );
   }
 
@@ -59,6 +67,8 @@ class Reply {
       content: '',
       likeCounts: 0,
       likeUserIds: boardEntity.likeUserIds?.toSet(),
+      parentReplyId: '',
+      childReplies: [],
     );
   }
 }

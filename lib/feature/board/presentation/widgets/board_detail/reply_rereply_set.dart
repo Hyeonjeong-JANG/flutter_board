@@ -123,7 +123,7 @@ class ReplyRereplySet extends HookConsumerWidget {
                     Icon(Icons.thumb_up, color: AppColor.mainBlue, size: 15.0),
                     SizedBox(width: 2.0),
                     Text(
-                      reply?.likeCounts.toString() ?? '',
+                      '2',
                       style: TextStyle(
                         fontSize: 12.0,
                       ),
@@ -150,16 +150,15 @@ class ReplyRereplySet extends HookConsumerWidget {
                   width: 32.0,
                   height: 32.0,
                   decoration: BoxDecoration(
-                    // color: Color(
-                    //     int.parse('0xFF${content.iconColor}')),
-                    color: Colors.green,
+                    color: Color(
+                        int.parse('0xFF${reply?.childReplies?.first.iconColor}')),
                     borderRadius: BorderRadius.circular(
                       AppSizes.borderRadiusL,
                     ),
                   ),
                   alignment: Alignment.center,
                   child: Text(
-                    '철수',
+                    reply?.childReplies?.first.shortName ?? '',
                     textAlign: TextAlign.center,
                     style: TextStyle(color: Colors.white),
                   ),
@@ -190,14 +189,15 @@ class ReplyRereplySet extends HookConsumerWidget {
                                 Row(
                                   children: [
                                     Text(
-                                      '김철수',
+                                      reply?.childReplies?.first.userName ?? '',
                                       style: TextStyle(
                                           fontWeight: FontWeight.w600),
                                     ),
                                     SizedBox(width: AppSizes.spacingS),
                                     Text(
                                       DateFormatter.formatToKoreanDateTime(
-                                          '2024-01-05T08:00:00'),
+                                          reply?.childReplies?.first.createdAt ??
+                                              ''),
                                       style: TextStyle(
                                         color: AppColor.grey,
                                         fontSize: 8.0,
@@ -215,12 +215,13 @@ class ReplyRereplySet extends HookConsumerWidget {
                                       ),
                                       children: [
                                         TextSpan(
-                                          text: '@최희철 ',
+                                          text: '@최희철 ', // 댓글쓴사람이 멘션!
                                           style: TextStyle(
                                               color: AppColor.mainBlue),
                                         ),
                                         TextSpan(
-                                            text: '오키 고마워요!',
+                                            text: reply?.childReplies?.first.content ??
+                                                '',
                                             style: TextStyle(
                                                 color: AppColor.black)),
                                       ],
@@ -236,19 +237,13 @@ class ReplyRereplySet extends HookConsumerWidget {
                     SizedBox(height: AppSizes.spacingS),
                     Row(
                       children: [
-                        Row(
-                          children: [
-                            Text('좋아요', style: TextStyle(fontSize: 12.0)),
-                            Icon(Icons.thumb_up, size: 15.0),
-                            Text('2', style: TextStyle(fontSize: 12.0)),
-                          ],
-                        ),
-                        SizedBox(width: AppSizes.spacingM),
-                        Row(
-                          children: [
-                            Text('답글달기', style: TextStyle(fontSize: 12.0)),
-                          ],
-                        ),
+                        Text('좋아요', style: TextStyle(fontSize: 12.0)),
+                        Icon(Icons.thumb_up, size: 15.0),
+                        SizedBox(width: 2.0),
+                        Text(
+                            reply?.childReplies?.first.likeCounts.toString() ??
+                                '',
+                            style: TextStyle(fontSize: 12.0)),
                       ],
                     ),
                     // 대댓글
