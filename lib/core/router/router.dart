@@ -1,9 +1,9 @@
-import 'package:board/feature/presentation/pages/board_detail_page.dart';
+import 'package:board/feature/board/presentation/pages/board_detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:board/feature/presentation/pages/board_home_page.dart';
-import 'package:board/feature/presentation/pages/board_write_page.dart';
+import 'package:board/feature/board/presentation/pages/board_home_page.dart';
+import 'package:board/feature/board/presentation/pages/board_write_page.dart';
 import '../providers/loading_provider.dart';
 import 'navigator_key.dart';
 
@@ -23,13 +23,16 @@ final routerProvider = Provider.family<GoRouter, String>((ref, userId) {
         routes: [
           // 게시글 작성 페이지
           GoRoute(
-            path: 'write',
+            path: '/write',
             builder: (context, state) => const BoardWritePage(),
           ),
           // 게시글 상세 페이지
           GoRoute(
             path: '/:boardId',
-            builder: (context, state) => const BoardDetailPage(),
+            builder: (context, state) {
+              final boardId = state.pathParameters['boardId'] ?? '';
+              return BoardDetailPage(boardId: boardId);
+            },
           ),
         ],
       ),
