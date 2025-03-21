@@ -72,7 +72,7 @@ class DateFormatter {
     try {
       final DateTime parsedDate = DateTime.parse(dateTimeStr);
        // 'a' (AM/PM)를 '오전/오후'로 변환
-    final String formattedDate = DateFormat('yyyy년 MM월 dd일 a hh시 mm분', 'ko_KR').format(parsedDate);
+    final String formattedDate = DateFormat('yyyy년 MM월 dd일 a hh:mm', 'ko_KR').format(parsedDate);
 
     // 'AM' → '오전', 'PM' → '오후' 변환
     return formattedDate.replaceAll('AM', '오전').replaceAll('PM', '오후');
