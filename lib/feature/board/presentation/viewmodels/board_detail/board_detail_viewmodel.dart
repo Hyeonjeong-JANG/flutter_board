@@ -1,3 +1,4 @@
+import 'package:board/feature/board/data/models/reply_model.dart';
 import 'package:board/feature/board/domain/entities/pin_info_entity.dart';
 import 'package:board/feature/board/domain/entities/reply_entity.dart';
 import 'package:board/feature/board/presentation/viewmodels/board_provider.dart';
@@ -38,23 +39,58 @@ class BoardDetailViewModel {
     this.replies,
   });
 
+  factory BoardDetailViewModel.init() {
+    return BoardDetailViewModel(
+      boardId: '',
+      userId: '',
+      userName: '',
+      shortName: '',
+      iconColor: '',
+      content: '',
+      images: [],
+      createdAt: '',
+      isOwner: false,
+      isManager: false,
+      likeCounts: 0,
+      replyCounts: 0,
+      pinInfo: PinInfo(
+        isAlertPinned: false,
+        alertPinnedAt: null,
+        isPinned: false,
+        pinnedAt: null,
+        isTopPinned: false,
+        topPinnedAt: null,
+      ),
+      replies: [],
+    );
+  }
   factory BoardDetailViewModel.fromJson(Map<String, dynamic> json) {
     return BoardDetailViewModel(
-      boardId: json['boardId'],
-      userId: json['userId'],
-      userName: json['userName'],
-      shortName: json['shortName'],
-      iconColor: json['iconColor'],
-      content: json['content'],
-      images: json['images'],
-      createdAt: json['createdAt'],
-      updatedAt: json['updatedAt'],
-      isOwner: json['isOwner'],
-      isManager: json['isManager'],
-      likeCounts: json['likeCounts'],
-      replyCounts: json['replyCounts'],
-      pinInfo: json['pinInfo'],
-      replies: json['replies'],
+      boardId: json['boardId'] as String,
+      userId: json['userId'] as String,
+      userName: json['userName'] as String,
+      shortName: json['shortName'] as String,
+      iconColor: json['iconColor'] as String,
+      content: json['content'] as String,
+      images: List<String>.from(json['images'] ?? []),
+      createdAt: json['createdAt'] as String,
+      updatedAt: json['updatedAt'] as String?,
+      isOwner: json['isOwner'] as bool,
+      isManager: json['isManager'] as bool,
+      likeCounts: json['likeCounts'] as int,
+      replyCounts: json['replyCounts'] as int,
+      pinInfo: PinInfo(
+        isAlertPinned: json['pinInfo']['isAlertPinned'] as bool,
+        alertPinnedAt: json['pinInfo']['alertPinnedAt'] as String?,
+        isPinned: json['pinInfo']['isPinned'] as bool,
+        pinnedAt: json['pinInfo']['pinnedAt'] as String?,
+        isTopPinned: json['pinInfo']['isTopPinned'] as bool,
+        topPinnedAt: json['pinInfo']['topPinnedAt'] as String?,
+      ),
+      replies: json['replies'] != null
+          ? List<Reply>.from(
+              json['replies'].map((x) => ReplyModel.fromJson(x).toEntity()))
+          : null,
     );
   }
 
@@ -81,7 +117,7 @@ class BoardDetailViewModel {
       shortName: shortName ?? this.shortName,
       iconColor: iconColor ?? this.iconColor,
       content: content ?? this.content,
-      images: images ?? this.images,
+      images: images ?? images,
       createdAt: createdAt ?? this.createdAt,
       updatedAt: updatedAt ?? this.updatedAt,
       isOwner: isOwner ?? this.isOwner,
@@ -90,27 +126,6 @@ class BoardDetailViewModel {
       replyCounts: replyCounts ?? this.replyCounts,
       pinInfo: pinInfo ?? this.pinInfo,
       replies: replies ?? this.replies,
-    );
-  }
-
-  static BoardDetailViewModel init(Ref ref) {
-    final boardEntity = ref.read(boardProvider).boardEntity;
-    return BoardDetailViewModel(
-      boardId: boardEntity.boardId,
-      userId: boardEntity.userId,
-      userName: boardEntity.userName,
-      shortName: boardEntity.shortName,
-      iconColor: boardEntity.iconColor,
-      content: boardEntity.content,
-      images: boardEntity.images,
-      createdAt: boardEntity.createdAt,
-      updatedAt: boardEntity.updatedAt,
-      isOwner: boardEntity.isOwner,
-      isManager: boardEntity.isManager,
-      likeCounts: boardEntity.likeCounts,
-      replyCounts: boardEntity.replyCounts,
-      pinInfo: boardEntity.pinInfo,
-      replies: boardEntity.replies,
     );
   }
 }

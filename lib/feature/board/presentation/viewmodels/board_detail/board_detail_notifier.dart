@@ -9,7 +9,7 @@ class BoardDetailNotifier extends StateNotifier<BoardDetailViewModel> {
   final Ref ref;
 
   BoardDetailNotifier(this._boardUsecase, this.ref)
-      : super(BoardDetailViewModel.init(ref));
+      : super(BoardDetailViewModel.init());
 
   // 데이터를 가져오는 메서드
   Future<void> loadBoardDetail(String boardId) async {
@@ -22,8 +22,7 @@ class BoardDetailNotifier extends StateNotifier<BoardDetailViewModel> {
           .firstWhere((x) => x['boardId'] == boardId, orElse: () => null);
 
       if (content != null) {
-        state =
-            BoardDetailViewModel.fromJson(content);
+        state = BoardDetailViewModel.fromJson(content);
       } else {
         print('게시글 데이터를 찾을 수 없습니다: boardId=$boardId');
       }

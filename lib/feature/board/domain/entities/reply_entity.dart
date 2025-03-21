@@ -9,8 +9,6 @@ class Reply {
   final String iconColor;
   final String createdAt;
   final String content;
-  final bool isOwner;
-  final bool isManager;
   final int likeCounts;
   final Set<String>? likeUserIds;
   Reply({
@@ -21,8 +19,6 @@ class Reply {
     required this.iconColor,
     required this.createdAt,
     required this.content,
-    required this.isOwner,
-    required this.isManager,
     required this.likeCounts,
     this.likeUserIds,
   });
@@ -35,8 +31,6 @@ class Reply {
     String? iconColor,
     String? createdAt,
     String? content,
-    bool? isOwner,
-    bool? isManager,
     int? likeCounts,
     Set<String>? likeUserIds,
   }) {
@@ -48,8 +42,6 @@ class Reply {
       iconColor: iconColor ?? this.iconColor,
       createdAt: createdAt ?? this.createdAt,
       content: content ?? this.content,
-      isOwner: isOwner ?? this.isOwner,
-      isManager: isManager ?? this.isManager,
       likeCounts: likeCounts ?? this.likeCounts,
       likeUserIds: likeUserIds ?? this.likeUserIds,
     );
@@ -65,8 +57,6 @@ class Reply {
       iconColor: '',
       createdAt: '',
       content: '',
-      isOwner: false,
-      isManager: false,
       likeCounts: 0,
       likeUserIds: boardEntity.likeUserIds?.toSet(),
     );
