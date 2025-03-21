@@ -39,6 +39,7 @@ class BoardDetailPage extends HookConsumerWidget {
         ),
         child: Column(
           children: [
+            // 게시글 -> 좋아요, 댓글달기 버튼 분리해야할지도
             Row(
               children: [
                 Expanded(
@@ -64,8 +65,7 @@ class BoardDetailPage extends HookConsumerWidget {
                                   ),
                                   alignment: Alignment.center,
                                   child: Text(
-                                    // content.shortName,
-                                    '지영',
+                                    content.shortName,
                                     textAlign: TextAlign.center,
                                     style: TextStyle(color: Colors.white),
                                   ),
@@ -192,6 +192,7 @@ class BoardDetailPage extends HookConsumerWidget {
               ],
             ),
             SizedBox(height: AppSizes.spacingL),
+            // 댓글 + 대댓글 세트
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -199,17 +200,15 @@ class BoardDetailPage extends HookConsumerWidget {
                   width: 32.0,
                   height: 32.0,
                   decoration: BoxDecoration(
-                    // color: Color(
-                    //     int.parse('0xFF${content.iconColor}')),
-                    color: Colors.blue,
+                    color: Color(
+                        int.parse('0xFF${content.replies?.first.iconColor}')),
                     borderRadius: BorderRadius.circular(
                       AppSizes.borderRadiusL,
                     ),
                   ),
                   alignment: Alignment.center,
                   child: Text(
-                    // content.shortName,
-                    '희철',
+                    content.replies?.first.shortName ?? '',
                     textAlign: TextAlign.center,
                     style: TextStyle(color: Colors.white),
                   ),
@@ -241,7 +240,7 @@ class BoardDetailPage extends HookConsumerWidget {
                                 Row(
                                   children: [
                                     Text(
-                                      '최희철',
+                                      content.replies?.first.userName ?? '',
                                       style: TextStyle(
                                         fontWeight: FontWeight.w600,
                                         fontSize: 14.0,
@@ -269,13 +268,16 @@ class BoardDetailPage extends HookConsumerWidget {
                                         fontSize: 14.0,
                                       ),
                                       children: [
+                                        // @로 호출을 하면 여기에 뜬다.
                                         TextSpan(
                                           text: '',
                                           style: TextStyle(
                                               color: AppColor.mainBlue),
                                         ),
                                         TextSpan(
-                                            text: '네, 확인했습니다.\n저번주 지영님인거 같아요!',
+                                            text: content
+                                                    .replies?.first.content ??
+                                                '',
                                             style: TextStyle(
                                                 color: AppColor.black)),
                                       ],
@@ -294,7 +296,7 @@ class BoardDetailPage extends HookConsumerWidget {
                       children: [
                         Row(
                           children: [
-                            // 좋아요 했으면 글씨랑 아이콘 파란색
+                            // 로그인한 사람이 좋아요 했으면 글씨랑 아이콘 파란색
                             Text(
                               '좋아요',
                               style: TextStyle(
@@ -348,10 +350,10 @@ class BoardDetailPage extends HookConsumerWidget {
                           ),
                         ),
                         SizedBox(width: AppSizes.spacingM),
+                        // 대댓글 -> 대댓글이 없으면 안 보임
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            // 댓글
                             Container(
                               width: 200.0,
                               decoration: BoxDecoration(
