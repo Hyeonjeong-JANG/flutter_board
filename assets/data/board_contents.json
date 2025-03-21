@@ -14,7 +14,11 @@
       "likeUserIds": ["직원3", "직원4", "직원6"],
       "replyCounts": 2,
       "content": "이번 주말 예약이 많습니다. \n조리 준비를 미리 하고 재료 주문도 체크해주세요. \n혹시 변경 사항 있으면 공유 부탁드립니다.",
-      "images": ["https://picsum.photos/200/300", "https://picsum.photos/200/300", "https://picsum.photos/200/300"],
+      "images": [
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300"
+      ],
       "pinInfo": {
         "isAlertPinned": true,
         "alertPinnedAt": "2024-01-05T08:00:00",
@@ -31,7 +35,7 @@
           "shortName": "영희",
           "iconColor": "9E33C2",
           "createdAt": "2024-01-05T08:00:00",
-          "content": "예약 확인 했습니다. 문제 없습니다.",
+          "content": "111111111111111",
           "likeCounts": 2,
           "likeUserIds": ["직원3", "직원4", "직원6"]
         },
@@ -42,7 +46,7 @@
           "shortName": "미주",
           "iconColor": "9E33C2",
           "createdAt": "2024-01-05T08:00:00",
-          "content": "예약 확인 했습니다. 문제 없습니다.",
+          "content": "222222222222222",
           "likeCounts": 2,
           "likeUserIds": ["사장", "직원4", "직원6"]
         }
@@ -62,7 +66,11 @@
       "likeUserIds": ["직원3", "직원4", "직원6"],
       "replyCounts": 1,
       "content": "냉장고 안쪽에 있는 채소들 먼저 사용해주세요. \n유통기한 지난 것 없는지 점검 부탁드립니다. \n위생관리 철저히 해주세요!",
-      "images": ["https://picsum.photos/200/300", "https://picsum.photos/200/300", "https://picsum.photos/200/300"],
+      "images": [
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300"
+      ],
       "pinInfo": {
         "isAlertPinned": false,
         "alertPinnedAt": "",
@@ -79,7 +87,7 @@
           "shortName": "영희",
           "iconColor": "9E33C2",
           "createdAt": "2024-01-05T08:00:00",
-          "content": "예약 확인 했습니다. 문제 없습니다.",
+          "content": "333333333333333",
           "likeCounts": 2,
           "likeUserIds": ["직원2", "직원4", "직원6"]
         },
@@ -90,7 +98,7 @@
           "shortName": "미주",
           "iconColor": "9E33C2",
           "createdAt": "2024-01-05T08:00:00",
-          "content": "예약 확인 했습니다. 문제 없습니다.",
+          "content": "444444444444444",
           "likeCounts": 2,
           "likeUserIds": ["직원2", "직원3", "직원6"]
         }
@@ -110,7 +118,11 @@
       "likeUserIds": ["직원3", "직원4", "직원6"],
       "replyCounts": 3,
       "content": "새로운 파스타 메뉴 개발 중입니다. 직원 의견 받아 메뉴 보완하려 하니 시식 가능하신 분들은 피드백 부탁드립니다!",
-      "images": ["https://picsum.photos/200/300", "https://picsum.photos/200/300", "https://picsum.photos/200/300"],
+      "images": [
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300"
+      ],
       "pinInfo": {
         "isAlertPinned": true,
         "alertPinnedAt": "2024-01-15T14:45:00",
@@ -122,12 +134,12 @@
       "replies": [
         {
           "replyId": "5",
-          "userId": "직원3",  
+          "userId": "직원3",
           "userName": "김영희",
           "shortName": "영희",
           "iconColor": "9E33C2",
           "createdAt": "2024-01-05T08:00:00",
-          "content": "예약 확인 했습니다. 문제 없습니다.",
+          "content": "555555555555555",
           "likeCounts": 2,
           "likeUserIds": ["직원2", "직원3", "직원6"]
         },
@@ -138,7 +150,7 @@
           "shortName": "미주",
           "iconColor": "9E33C2",
           "createdAt": "2024-01-05T08:00:00",
-          "content": "예약 확인 했습니다. 문제 없습니다.",
+          "content": "666666666666666",
           "likeCounts": 2,
           "likeUserIds": ["직원2", "직원3", "직원6"]
         }
@@ -158,7 +170,11 @@
       "likeUserIds": ["직원3", "직원4", "직원6"],
       "replyCounts": 1,
       "content": "최근 고객 클레임 중 음식이 늦게 나온다는 의견이 많습니다. 서비스 개선 방안 논의해야 하니 의견 남겨주세요.",
-      "images": ["https://picsum.photos/200/300", "https://picsum.photos/200/300", "https://picsum.photos/200/300"],
+      "images": [
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300"
+      ],
       "pinInfo": {
         "isAlertPinned": false,
         "alertPinnedAt": "",
@@ -175,7 +191,7 @@
           "shortName": "영희",
           "iconColor": "9E33C2",
           "createdAt": "2024-01-05T08:00:00",
-          "content": "예약 확인 했습니다. 문제 없습니다.",
+          "content": "777777777777777",
           "likeCounts": 2,
           "likeUserIds": ["직원2", "직원3", "직원6"]
         },
@@ -186,7 +202,7 @@
           "shortName": "미주",
           "iconColor": "9E33C2",
           "createdAt": "2024-01-05T08:00:00",
-          "content": "예약 확인 했습니다. 문제 없습니다.",
+          "content": "888888888888888",
           "likeCounts": 2,
           "likeUserIds": ["직원2", "직원3", "직원6"]
         }
@@ -206,7 +222,11 @@
       "likeUserIds": ["직원3", "직원4", "직원6"],
       "replyCounts": 2,
       "content": "다음 주부터 주방 위생 점검이 있을 예정입니다. 청소 일정과 담당 구역 확인 후 철저히 준비 부탁드립니다.",
-      "images": ["https://picsum.photos/200/300", "https://picsum.photos/200/300", "https://picsum.photos/200/300"],
+      "images": [
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300"
+      ],
       "pinInfo": {
         "isAlertPinned": true,
         "alertPinnedAt": "2024-02-05T09:00:00",
@@ -223,7 +243,7 @@
           "shortName": "영희",
           "iconColor": "9E33C2",
           "createdAt": "2024-01-05T08:00:00",
-          "content": "예약 확인 했습니다. 문제 없습니다.",
+          "content": "999999999999999",
           "likeCounts": 2,
           "likeUserIds": ["직원2", "직원3", "직원6"]
         },
@@ -234,7 +254,7 @@
           "shortName": "미주",
           "iconColor": "9E33C2",
           "createdAt": "2024-01-05T08:00:00",
-          "content": "예약 확인 했습니다. 문제 없습니다.",
+          "content": "101010101010101",
           "likeCounts": 2,
           "likeUserIds": ["직원2", "직원3", "직원6"]
         }
@@ -254,7 +274,11 @@
       "likeUserIds": ["직원3", "직원4", "직원6"],
       "replyCounts": 1,
       "content": "오늘 아침 식자재 검수를 완료했습니다. \n신선도 체크 필수이며, 유통기한도 확인해주세요. \n특별히 채소 상태가 안 좋을 수 있으니 확인 부탁드립니다.",
-      "images": ["https://picsum.photos/200/300", "https://picsum.photos/200/300", "https://picsum.photos/200/300"],
+      "images": [
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300"
+      ],
       "pinInfo": {
         "isAlertPinned": true,
         "alertPinnedAt": "2024-01-10T08:30:00",
@@ -271,7 +295,7 @@
           "shortName": "영희",
           "iconColor": "9E33C2",
           "createdAt": "2024-01-05T08:00:00",
-          "content": "예약 확인 했습니다. 문제 없습니다.",
+          "content": "111111111111111",
           "likeCounts": 2,
           "likeUserIds": ["직원2", "직원3", "직원6"]
         },
@@ -282,7 +306,7 @@
           "shortName": "미주",
           "iconColor": "9E33C2",
           "createdAt": "2024-01-05T08:00:00",
-          "content": "예약 확인 했습니다. 문제 없습니다.",
+          "content": "121212121212121",
           "likeCounts": 2,
           "likeUserIds": ["직원2", "직원3", "직원6"]
         }
@@ -302,7 +326,11 @@
       "likeUserIds": ["직원3", "직원4", "직원6"],
       "replyCounts": 2,
       "content": "이번 주 금요일 저녁 단체 예약이 있습니다. \n손님이 20명이라 미리 좌석 배치 준비 부탁드립니다. \n주문 예상 메뉴도 확인 후 미리 재료 준비하세요.",
-      "images": ["https://picsum.photos/200/300", "https://picsum.photos/200/300", "https://picsum.photos/200/300"],
+      "images": [
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300"
+      ],
       "pinInfo": {
         "isAlertPinned": false,
         "alertPinnedAt": "",
@@ -319,7 +347,7 @@
           "shortName": "영희",
           "iconColor": "9E33C2",
           "createdAt": "2024-01-05T08:00:00",
-          "content": "예약 확인 했습니다. 문제 없습니다.",
+          "content": "131313131313131",
           "likeCounts": 2,
           "likeUserIds": ["직원2", "직원3", "직원6"]
         },
@@ -330,7 +358,7 @@
           "shortName": "미주",
           "iconColor": "9E33C2",
           "createdAt": "2024-01-05T08:00:00",
-          "content": "예약 확인 했습니다. 문제 없습니다.",
+          "content": "141414141414141",
           "likeCounts": 2,
           "likeUserIds": ["직원2", "직원3", "직원6"]
         }
@@ -350,7 +378,11 @@
       "likeUserIds": ["직원3", "직원4", "직원6"],
       "replyCounts": 3,
       "content": "냉장고 온도를 다시 확인해주세요. \n낮 시간 동안 문이 열린 상태로 유지되는 일이 있었습니다. \n식재료 신선도에 영향을 줄 수 있으니 주의 바랍니다.",
-      "images": ["https://picsum.photos/200/300", "https://picsum.photos/200/300", "https://picsum.photos/200/300"],
+      "images": [
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300"
+      ],
       "pinInfo": {
         "isAlertPinned": false,
         "alertPinnedAt": "",
@@ -367,7 +399,7 @@
           "shortName": "영희",
           "iconColor": "9E33C2",
           "createdAt": "2024-01-05T08:00:00",
-          "content": "예약 확인 했습니다. 문제 없습니다.",
+          "content": "151515151515151",
           "likeCounts": 2,
           "likeUserIds": ["직원2", "직원3", "직원6"]
         },
@@ -378,7 +410,7 @@
           "shortName": "미주",
           "iconColor": "9E33C2",
           "createdAt": "2024-01-05T08:00:00",
-          "content": "예약 확인 했습니다. 문제 없습니다.",
+          "content": "161616161616161",
           "likeCounts": 2,
           "likeUserIds": ["직원2", "직원3", "직원6"]
         }
@@ -398,7 +430,11 @@
       "likeUserIds": ["직원3", "직원4", "직원6"],
       "replyCounts": 1,
       "content": "새로운 점심 메뉴 시식을 진행합니다. \n오늘 오후 3시에 주방에서 시식회를 하니 모두 참여해주세요. \n피드백 후 정식 메뉴로 추가할지 결정할 예정입니다.",
-      "images": ["https://picsum.photos/200/300", "https://picsum.photos/200/300", "https://picsum.photos/200/300"],
+      "images": [
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300"
+      ],
       "pinInfo": {
         "isAlertPinned": true,
         "alertPinnedAt": "2024-02-10T12:20:00",
@@ -415,7 +451,7 @@
           "shortName": "영희",
           "iconColor": "9E33C2",
           "createdAt": "2024-01-05T08:00:00",
-          "content": "예약 확인 했습니다. 문제 없습니다.",
+          "content": "171717171717171",
           "likeCounts": 2,
           "likeUserIds": ["직원2", "직원3", "직원6"]
         },
@@ -426,7 +462,7 @@
           "shortName": "미주",
           "iconColor": "9E33C2",
           "createdAt": "2024-01-05T08:00:00",
-          "content": "예약 확인 했습니다. 문제 없습니다.",
+          "content": "181818181818181",
           "likeCounts": 2,
           "likeUserIds": ["직원2", "직원3", "직원6"]
         }

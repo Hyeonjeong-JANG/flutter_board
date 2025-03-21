@@ -354,6 +354,7 @@ class BoardDetailPage extends HookConsumerWidget {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
+                            
                             Container(
                               width: 200.0,
                               decoration: BoxDecoration(
