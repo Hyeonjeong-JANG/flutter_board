@@ -65,13 +65,13 @@ class BoardDetailPage extends HookConsumerWidget {
                                         width: 16.0,
                                         height: 16.0,
                                       ),
-                                    if (content.isPinned)
+                                    if (content.pinInfo.isPinned)
                                       Image.asset(
                                         'assets/icons/pin.png',
                                         width: 16.0,
                                         height: 16.0,
                                       ),
-                                    if (content.isAlertPinned)
+                                    if (content.pinInfo.isAlertPinned)
                                       Image.asset(
                                         'assets/icons/speaker.png',
                                         width: 16.0,

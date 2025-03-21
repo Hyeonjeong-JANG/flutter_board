@@ -21,9 +21,7 @@ BoardDetailViewModel _$BoardDetailViewModelFromJson(
       isManager: json['isManager'] as bool,
       likeCounts: (json['likeCounts'] as num).toInt(),
       replyCounts: (json['replyCounts'] as num).toInt(),
-      isAlertPinned: json['isAlertPinned'] as bool,
-      isPinned: json['isPinned'] as bool,
-      isTopPinned: json['isTopPinned'] as bool,
+      pinInfo: PinInfo.fromJson(json['pinInfo'] as Map<String, dynamic>),
       replies: (json['replies'] as List<dynamic>?)
           ?.map((e) => Reply.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -44,10 +42,20 @@ Map<String, dynamic> _$BoardDetailViewModelToJson(
       'likeCounts': instance.likeCounts,
       'replyCounts': instance.replyCounts,
       'content': instance.content,
+      'pinInfo': instance.pinInfo,
+      'replies': instance.replies,
+    };
+
+PinInfo _$PinInfoFromJson(Map<String, dynamic> json) => PinInfo(
+      isAlertPinned: json['isAlertPinned'] as bool,
+      isPinned: json['isPinned'] as bool,
+      isTopPinned: json['isTopPinned'] as bool,
+    );
+
+Map<String, dynamic> _$PinInfoToJson(PinInfo instance) => <String, dynamic>{
       'isAlertPinned': instance.isAlertPinned,
       'isPinned': instance.isPinned,
       'isTopPinned': instance.isTopPinned,
-      'replies': instance.replies,
     };
 
 Reply _$ReplyFromJson(Map<String, dynamic> json) => Reply(
@@ -58,9 +66,10 @@ Reply _$ReplyFromJson(Map<String, dynamic> json) => Reply(
       iconColor: json['iconColor'] as String,
       createdAt: json['createdAt'] as String,
       content: json['content'] as String,
-      isOwner: json['isOwner'] as bool,
-      isManager: json['isManager'] as bool,
       likeCounts: (json['likeCounts'] as num).toInt(),
+      likeUserIds: (json['likeUserIds'] as List<dynamic>?)
+          ?.map((e) => e as String)
+          .toList(),
     );
 
 Map<String, dynamic> _$ReplyToJson(Reply instance) => <String, dynamic>{
@@ -71,7 +80,6 @@ Map<String, dynamic> _$ReplyToJson(Reply instance) => <String, dynamic>{
       'iconColor': instance.iconColor,
       'createdAt': instance.createdAt,
       'content': instance.content,
-      'isOwner': instance.isOwner,
-      'isManager': instance.isManager,
       'likeCounts': instance.likeCounts,
+      'likeUserIds': instance.likeUserIds,
     };

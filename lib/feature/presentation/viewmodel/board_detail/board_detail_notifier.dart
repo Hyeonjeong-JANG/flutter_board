@@ -20,9 +20,11 @@ class BoardDetailNotifier extends Notifier<BoardDetailViewModel> {
       isManager: false,
       likeCounts: 0,
       replyCounts: 0,
-      isAlertPinned: false,
-      isPinned: false,
-      isTopPinned: false,
+      pinInfo: PinInfo(
+        isAlertPinned: false,
+        isPinned: false,
+        isTopPinned: false,
+      ),
       replies: [
         Reply(
           replyId: '',
@@ -32,9 +34,8 @@ class BoardDetailNotifier extends Notifier<BoardDetailViewModel> {
           iconColor: '',
           createdAt: '',
           content: '',
-          isOwner: false,
-          isManager: false,
           likeCounts: 0,
+          likeUserIds: [],
         ),
       ],
     );
